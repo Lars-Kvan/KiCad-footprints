@@ -1,0 +1,204 @@
+(footprint "IND_CPEX3635L-4R7MC"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -14.575 -19.135 0)
+		(layer "F.SilkS")
+		(uuid "586f8eaf-fb25-468f-bb8b-5eace865f319")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IND_CPEX3635L-4R7MC"
+		(at -5.685 19.115 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29f34ee1-ddd4-4fc4-8b69-bc6b0607be50")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "076460fc-0a23-4262-9a8b-070371724f9c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "85c34716-f9a5-4a4a-95c2-f943ef91885c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -17.85 -18)
+		(end 17.85 -18)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4a406267-5654-42bc-81b5-f0476401677f")
+	)
+	(fp_line
+		(start -17.85 18)
+		(end -17.85 -18)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5b3d8e03-c10a-4e7a-8c6c-b138b77bac89")
+	)
+	(fp_line
+		(start 17.85 -18)
+		(end 17.85 18)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bca17340-611c-4621-941e-a14d593dfb67")
+	)
+	(fp_line
+		(start 17.85 18)
+		(end -17.85 18)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e4b2f70-ec69-42dd-bdaf-5e7e7fff7d36")
+	)
+	(fp_line
+		(start -18.1 -18.25)
+		(end 18.1 -18.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a7958386-b05b-4bcd-abc3-8b16c864094d")
+	)
+	(fp_line
+		(start -18.1 18.25)
+		(end -18.1 -18.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a5c4dad4-c5e6-4a81-967d-98f3d7b0c966")
+	)
+	(fp_line
+		(start 18.1 -18.25)
+		(end 18.1 18.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "02be5874-1f23-4925-8f8a-066ac846bf08")
+	)
+	(fp_line
+		(start 18.1 18.25)
+		(end -18.1 18.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "79a4d26e-aab8-4405-9b6e-55af5830be46")
+	)
+	(fp_line
+		(start -17.85 -18)
+		(end 17.85 -18)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "39175e76-59c8-4e2a-b82c-b468e3ddcf2e")
+	)
+	(fp_line
+		(start -17.85 18)
+		(end -17.85 -18)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "538a4fe4-8cbf-4a9d-a3d5-13ff8409625e")
+	)
+	(fp_line
+		(start 17.85 -18)
+		(end 17.85 18)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "50fb1dbd-aae6-43ef-98e2-3c10d36a53c2")
+	)
+	(fp_line
+		(start 17.85 18)
+		(end -17.85 18)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "86c4b702-eefa-4162-91b8-13901a81430f")
+	)
+	(pad "1" thru_hole oval
+		(at -11.3 5.75)
+		(size 7.7 15.4)
+		(drill oval 4.4 9.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "3e707e31-31dc-4c26-add8-4f5f1ec62789")
+	)
+	(pad "2" thru_hole oval
+		(at 11.3 -5.75)
+		(size 7.7 15.4)
+		(drill oval 4.4 9.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "1589afb2-6866-4db1-ac5d-d8631bc0e02d")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Magnetics Inductor Power/3D Model/CPEX3635L-560MC--3DModel-STEP-56544.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

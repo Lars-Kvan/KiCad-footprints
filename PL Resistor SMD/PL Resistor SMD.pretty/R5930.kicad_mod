@@ -1,0 +1,191 @@
+(footprint "R5930"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 4020 (10251 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://datasheet.octopart.com/HVC0603T5004FET-Ohmite-datasheet-26699797.pdf), generated with kicad-footprint-generator")
+	(tags "resistor")
+	(property "Reference" "REF**"
+		(at 0 -5.2 0)
+		(layer "F.SilkS")
+		(uuid "23d58b26-c05c-4998-b126-79e464d4fd69")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "R5930"
+		(at 0 3.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a6537d27-8f7e-4693-aaf2-5d939fe43dc6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f8bca5c6-73ea-4b61-a10d-12f07b98d0f0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0282e5cf-0f8c-4d28-ad55-07a947a92caf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.9 4.5)
+		(end 3.872504 4.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0aa290ec-ec45-4347-9c36-59d59b5e25f0")
+	)
+	(fp_line
+		(start -3.886252 -4.5)
+		(end 3.886252 -4.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0fb291ba-f2d6-497c-afe6-7643592ff9fa")
+	)
+	(fp_line
+		(start -8.2 -4.6)
+		(end 8.2 -4.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4627e692-1342-4fae-88a2-0cca11770431")
+	)
+	(fp_line
+		(start -8.2 4.6)
+		(end -8.2 -4.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "34ce39af-40f7-4089-bff5-07da5db4483e")
+	)
+	(fp_line
+		(start 8.2 -4.6)
+		(end 8.2 4.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ffab01b5-4d43-4fe4-8b22-ca37ef661d45")
+	)
+	(fp_line
+		(start 8.2 4.6)
+		(end -8.2 4.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8b026262-162a-478f-b6fd-2457577f34a4")
+	)
+	(fp_line
+		(start -8.1 -4.5)
+		(end 8.1 -4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "580e75d2-38bb-4d41-834e-d3a6994b4460")
+	)
+	(fp_line
+		(start -8.1 4.5)
+		(end -8.1 -4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c21dd89b-6af1-4efc-b242-3ead4a46191b")
+	)
+	(fp_line
+		(start 8.1 -4.5)
+		(end 8.1 4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f152331a-d571-4927-ac04-9ff8cf1819ca")
+	)
+	(fp_line
+		(start 8.1 4.5)
+		(end -8.1 4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "20b70ed0-8ca7-4a50-816c-060753393c40")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0f5cc4a5-71c0-4c56-ab7c-c508a2d3c10b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -5.4 0)
+		(size 5.2 8.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d277c8d5-6869-4f38-9a86-69b6d94e8e9f")
+	)
+	(pad "2" smd rect
+		(at 5.4 0)
+		(size 5.2 8.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dc79ce64-9075-4b5c-87c9-b7ef7f61af3e")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Resistor SMD/3D Model/SEWF 5930-1.0mΩ.STEP"
+		(offset
+			(xyz -7.5 -3.85 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

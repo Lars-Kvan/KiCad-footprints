@@ -1,0 +1,148 @@
+(footprint "CUI_CMC-2742PBJ-A"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3.9 0)
+		(layer "F.SilkS")
+		(uuid "54f9389b-0bf8-44cc-973d-2b1e9844f56e")
+		(effects
+			(font
+				(size 1.001748 1.001748)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CUI_CMC-2742PBJ-A"
+		(at 6.994735 4.451195 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3601d880-3bad-4785-bf56-45f8824294c5")
+		(effects
+			(font
+				(size 1.001394 1.001394)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f812ac3-2b10-4ad8-9e77-1a6a2db390b6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1cfcaa2c-8b7d-46e0-aa03-f081962481ad")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 1 -2.15)
+		(end 1 -1.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d635fe14-f9fd-4a29-8119-7415c686a4a5")
+	)
+	(fp_line
+		(start 1.2 -1.95)
+		(end 0.8 -1.95)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d931a9e0-f1bd-4c8e-a41f-a1688698eddc")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3 0)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "a765494d-a6cd-45df-82e9-49a79e683158")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.25 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f5110cc9-f890-42e7-a491-2695a395573a")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3 0)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7e402e36-73b6-483b-9c1d-ccb53097cbf3")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "25f89bbb-73b3-418f-aa0e-3afa4c148a51")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 1 -0.95)
+		(size 1.208 1.208)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "0bc6ab14-efb6-4750-9d36-3996c59e1306")
+	)
+	(pad "2" thru_hole circle
+		(at 1 0.95)
+		(size 1.208 1.208)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "aab0a50c-8396-498d-bea7-6148524180cf")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Transducer Acoustic/3D Model/CMC-2742PBJ-A--3DModel-STEP-1.STEP"
+		(offset
+			(xyz 0 0 -2.65)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
+)

@@ -1,0 +1,265 @@
+(footprint "TSX101G100-250"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.475 -1.85 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "08563530-422f-4468-8ee1-0b0858f3e8c4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TSX101G100-250"
+		(at 3.8 13 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7bfb7168-3ccc-44d6-8763-4d3b3790ae5d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "88caabe1-5eed-4d58-ac6f-21885e391a37")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "52d3086e-2bd8-4423-abfd-154fb67a2539")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.3 -5.3)
+		(end 5.3 -5.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "95c4477c-900a-4172-880d-2e915fe32bd9")
+	)
+	(fp_line
+		(start -5.3 -4.3)
+		(end -5.3 -5.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "22487427-f20d-4ac2-8856-6e419da5901d")
+	)
+	(fp_line
+		(start -5.3 -2.2)
+		(end -5.3 -1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "da9f5f48-009c-4bf8-b0b2-9f09208ae895")
+	)
+	(fp_line
+		(start -5.3 0.6)
+		(end -5.3 2.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d6f8b746-6b03-4c33-92ed-bfb1a67dd4d8")
+	)
+	(fp_line
+		(start -5.3 4.3)
+		(end -5.3 5.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "94711259-b601-449f-969d-0bcacf76f57b")
+	)
+	(fp_line
+		(start 5.3 -5.3)
+		(end 5.3 -4.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8e99db44-2d81-4aa7-964f-30cde74b7864")
+	)
+	(fp_line
+		(start 5.3 -1.5)
+		(end 5.3 -2.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "08cbb322-27f3-489d-8149-f218355de5a9")
+	)
+	(fp_line
+		(start 5.3 0.6)
+		(end 5.3 2.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7ba3f390-f885-41db-aa5e-c570238ef0af")
+	)
+	(fp_line
+		(start 5.3 4.2)
+		(end 5.3 5.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "772f9e82-1c1d-4ee0-8257-68580a7f47fe")
+	)
+	(fp_line
+		(start 5.3 5.3)
+		(end -5.3 5.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "661db6aa-194d-4af9-ad73-15d368074879")
+	)
+	(fp_circle
+		(center -5.8 -4.5)
+		(end -5.7 -4.5)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "8148b011-5ef2-49cf-bb5f-7e53c65b4e48")
+	)
+	(fp_rect
+		(start -6.298646 -5.498646)
+		(end 6.3 5.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "48b1ce9b-1fc7-44dd-b358-b96fd95b67fd")
+	)
+	(fp_rect
+		(start -5.1 -5.1)
+		(end 5.1 5.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8e220ec1-28cf-4f4e-bd17-7bbbae237273")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "0326c8d9-44fc-4611-b7ff-59b14b680df5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -5.25 -3.25 90)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "78aef030-1db9-4103-a406-6f28796b25ec")
+	)
+	(pad "2" thru_hole circle
+		(at -5.25 -0.45 90)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "93cc88e8-90de-4886-8bda-daa6054de5cc")
+	)
+	(pad "3" thru_hole circle
+		(at -5.25 3.25 90)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "7a10cd38-e3f7-4ba5-b2cd-d40cc385278b")
+	)
+	(pad "4" thru_hole rect
+		(at 5.25 -3.25 90)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "26502d93-b700-41c7-aed7-fde07718f680")
+	)
+	(pad "5" thru_hole circle
+		(at 5.25 -0.45 90)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "6db62a17-bdd5-4902-8701-e7d4e7092408")
+	)
+	(pad "6" thru_hole circle
+		(at 5.25 3.25 90)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "c94d424e-5285-47d2-bea4-76b679b55c89")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Electromechanical Navigation Switches/3D Model/TSX101G100-250  Multi-Directional Tactile Switch 2-Axis.STEP"
+		(offset
+			(xyz 0 0.1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

@@ -1,0 +1,161 @@
+(footprint "L_Wurth_WE-HCFT-2520_74437625200122"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Shielded High Current Inductor, body 25x20.8x21.75mm, https://www.we-online.com/en/components/products/WE-HCFT#/articles/WE-HCFT-2520")
+	(tags "THT")
+	(property "Reference" "REF**"
+		(at 7.75 -6.25 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1692e213-16d5-4ae0-9679-a4f58cd45cca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Wurth_WE-HCFT-2520_74437625200122"
+		(at 7.75 17.05 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c03ccf2-7773-49f1-9ba3-eac1acb8f7e4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00038afd-f4df-4be4-822c-2a9c9039b398")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "086348c3-1aa5-4dca-85ab-72b2b3d21be7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.085 -0.775)
+		(end -5.085 0.775)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "08975abb-6bd3-4748-8588-c740283b338d")
+	)
+	(fp_rect
+		(start -4.86 -5.11)
+		(end 20.36 15.91)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "ea97d73a-8579-4d23-9f9c-62df03f14fd2")
+	)
+	(fp_rect
+		(start -5 -5.25)
+		(end 20.5 16.05)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "02958928-b5dc-4325-af0b-b20235c4e68c")
+	)
+	(fp_line
+		(start -4.75 -0.775)
+		(end -3.5875 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "b355de58-03eb-406f-82ff-8655dbaee855")
+	)
+	(fp_line
+		(start -4.75 0.775)
+		(end -3.5875 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "9e01c84c-45b0-4064-b013-67659e950231")
+	)
+	(fp_rect
+		(start -4.75 -5)
+		(end 20.25 15.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "918602ce-abe9-4976-9c92-a81d34547f03")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 7.75 5.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4c519af5-4694-41a8-ad76-87882560c4c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 8.2 6.2)
+		(drill oval 6.2 4.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9a0c88cc-76d4-4268-bc2a-f16da7ea3eb8")
+	)
+	(pad "2" thru_hole oval
+		(at 15.5 10.8)
+		(size 8.2 6.2)
+		(drill oval 6.2 4.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0fb0238b-66b3-4947-9b98-bfb569970bdb")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Magnetics Inductor Power/3D Model/L_Wurth_WE-HCFT-2520_74437625200122.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

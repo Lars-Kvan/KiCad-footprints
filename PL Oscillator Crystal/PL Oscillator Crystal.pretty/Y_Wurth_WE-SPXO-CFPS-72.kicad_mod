@@ -1,0 +1,207 @@
+(footprint "Y_Wurth_WE-SPXO-CFPS-72"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Simple Packaged Quartz Oscillator, body 5x7x1.8mm, https://www.we-online.com/en/components/products/WE-SPXO#/articles/CFPS-72")
+	(tags "SMT")
+	(property "Reference" "REF**"
+		(at 0 -4.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "0c4a86e1-33e8-454b-949c-0c0de7b4e5ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Y_Wurth_WE-SPXO-CFPS-72"
+		(at 0 4.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bb55241a-4cfd-492f-ba03-9ce6aef2da60")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1191e5e0-02fc-414e-b955-6752a0411ce1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9bb2ed2-7b99-4a36-bdfb-dd6653cfdbef")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.61 1.38)
+		(end -2.61 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ae4de98b-e17d-44ab-a4c9-b50494ffc480")
+	)
+	(fp_line
+		(start -0.84 3.61)
+		(end 0.84 3.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0e6b238a-b9c7-4850-9c3c-10c1c0817653")
+	)
+	(fp_line
+		(start 0 -3.61)
+		(end 0.84 -3.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "12e5e7a3-f91a-4b1f-a15a-17921f2dc176")
+	)
+	(fp_line
+		(start 2.61 -1.38)
+		(end 2.61 1.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b47235e2-3a26-4af8-86db-493019a1afb9")
+	)
+	(fp_rect
+		(start -2.95 -3.75)
+		(end 2.95 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e4fe5f49-93ed-47e3-812f-7775351c3d46")
+	)
+	(fp_line
+		(start -2.5 -2.25)
+		(end -2.5 3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "135c1695-d9b7-48a5-9394-83b666587cd3")
+	)
+	(fp_line
+		(start -2.5 3.5)
+		(end 2.5 3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ffb9a3eb-0b59-49dd-a440-82362a65ef24")
+	)
+	(fp_line
+		(start -1.25 -3.5)
+		(end -2.5 -2.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "152aba44-f9a2-4e9f-a99e-c9e24d1fe4a0")
+	)
+	(fp_line
+		(start 2.5 -3.5)
+		(end -1.25 -3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "42ec1101-3752-40f2-8f4f-3a4bac8417f8")
+	)
+	(fp_line
+		(start 2.5 3.5)
+		(end 2.5 -3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "20c54547-6eea-481a-ba1e-b993836a195a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6235335c-fdcc-4fca-858e-dd743c5addec")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.9 -2.54)
+		(size 1.6 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "60330528-08e0-4510-b660-05d847611839")
+	)
+	(pad "2" smd rect
+		(at -1.9 2.54)
+		(size 1.6 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "30b7bb95-6373-4516-ad0e-7953ebe73948")
+	)
+	(pad "3" smd rect
+		(at 1.9 2.54)
+		(size 1.6 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fe4ae41f-1521-403e-9a62-a4ae71f1308a")
+	)
+	(pad "4" smd rect
+		(at 1.9 -2.54)
+		(size 1.6 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "69d30a0e-40b6-4745-9f34-8699014cac67")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Oscillator Crystal/3D Model/Y_Wurth_WE-SPXO-CFPS-72.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

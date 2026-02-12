@@ -1,0 +1,226 @@
+(footprint "WE-HCFT_3521"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.4 -12.335 0)
+		(layer "F.SilkS")
+		(uuid "1161e128-8dbc-4f5f-8a33-54193201c3cd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WE-HCFT_3521"
+		(at 0 12.365 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91019626-62ae-4137-b9fa-7b168be86467")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ddc61f5-4557-4c07-9fef-7cf9e770737d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cbc91d6e-297f-453a-93b8-b46f156a8e7f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -18.1 -10.85)
+		(end 18.1 -10.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "080cd54f-9e2b-4b97-8cc0-c462cffb1fdd")
+	)
+	(fp_line
+		(start -18.1 10.85)
+		(end -18.1 -10.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b0784589-2acf-4f27-8a26-78fb96464b16")
+	)
+	(fp_line
+		(start 18.1 -10.85)
+		(end 18.1 10.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d8bba9a3-55ef-4f46-98c8-c9ad91d2fb33")
+	)
+	(fp_line
+		(start 18.1 10.85)
+		(end -18.1 10.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1bf76310-797b-4a01-a8b6-1e3b2d4ebc8e")
+	)
+	(fp_circle
+		(center -12.6 12)
+		(end -12.4 12)
+		(stroke
+			(width 0.6)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "06f0517f-ba8a-4ab5-a3ef-db1435d9cdba")
+	)
+	(fp_poly
+		(pts
+			(xy -18.3 -11.05) (xy 18.3 -11.05) (xy 18.3 11.05) (xy -18.3 11.05)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5d7c1ee3-e92c-4072-84b8-82a718cb7646")
+	)
+	(fp_line
+		(start -18 -10.75)
+		(end 18 -10.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6888f485-ca1e-4923-ad25-08e3a121cd69")
+	)
+	(fp_line
+		(start -18 10.75)
+		(end -18 -10.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "07799dfc-1160-40a3-ad32-16b303b83796")
+	)
+	(fp_line
+		(start 18 -10.75)
+		(end 18 10.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e9a3f749-f953-4d27-9ddc-f9a75b9ad1a1")
+	)
+	(fp_line
+		(start 18 10.75)
+		(end -18 10.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7b08f140-2b2c-446a-bef5-26131b2ee211")
+	)
+	(fp_circle
+		(center -12.6 9)
+		(end -12.3 9)
+		(stroke
+			(width 0.6)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c75a5a64-bbf6-4e11-a73d-317479eed124")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "36d1c3d5-fecf-4963-9133-90494684160c")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.2)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at -6.8 4.5)
+		(size 10 5)
+		(drill oval 8 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e46165dd-79a7-43f4-af69-a09cd29c876f")
+	)
+	(pad "2" thru_hole oval
+		(at 6.75 -4.45)
+		(size 10 5)
+		(drill oval 8 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2e6fe0c5-c75c-434b-b9f1-a4577d2bb65a")
+	)
+	(pad "3" thru_hole circle
+		(at -6.75 -4.45)
+		(size 3.516 3.516)
+		(drill 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "8cbc8397-d83d-4995-90ba-465492113746")
+	)
+	(pad "4" thru_hole circle
+		(at 6.75 4.45)
+		(size 3.516 3.516)
+		(drill 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "d1aae0cf-9903-40ed-9887-95f677552e68")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Magnetics Inductor Power/3D Model/WE-HCFT_3521.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

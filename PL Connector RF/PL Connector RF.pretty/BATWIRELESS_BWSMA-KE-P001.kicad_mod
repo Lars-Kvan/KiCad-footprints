@@ -1,0 +1,214 @@
+(footprint "BATWIRELESS_BWSMA-KE-P001"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.1 -5.1 0)
+		(layer "F.SilkS")
+		(uuid "e6269be5-aaab-4992-b9f4-5294224fdb0c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "BATWIRELESS_BWSMA-KE-P001"
+		(at 12.625 -5.135 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98e732a5-1622-4aaa-9b65-a2639a97b637")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "abd4fe27-a1df-46f2-8747-0d59c844d0bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5c3076b2-755b-490a-b464-b782e1f91a93")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.5 -4.45)
+		(end -3.5 9.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "601883b7-0c26-41e3-9c5f-1eaa6f58d581")
+	)
+	(fp_line
+		(start -3.5 9.75)
+		(end 3.5 9.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "38adc3ec-cdbd-4222-9477-2d94873c95ea")
+	)
+	(fp_line
+		(start 3.5 -4.45)
+		(end -3.5 -4.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2742aa74-95c6-4eb0-8a67-0656501e0ffa")
+	)
+	(fp_line
+		(start 3.5 9.75)
+		(end 3.5 -4.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2b014a06-85a4-4392-a120-0c1852e89dc6")
+	)
+	(fp_line
+		(start -3.25 0)
+		(end 3.25 0)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "46384bb1-6c3c-41f0-9b98-963864a3136d")
+	)
+	(fp_line
+		(start -3.25 9.5)
+		(end -3.25 0)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1155f2f-48ba-438f-b1fb-a5fe323e2a69")
+	)
+	(fp_line
+		(start 3.25 0)
+		(end 3.25 9.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9cfd737a-438f-405a-a6b9-354a2463ce5e")
+	)
+	(fp_line
+		(start 3.25 0)
+		(end 11 0)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d43892e3-2e9b-4f1b-89e3-1dbb40533081")
+	)
+	(fp_line
+		(start 3.25 9.5)
+		(end -3.25 9.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2fefb3ec-6b85-47c4-afec-de90acfe6f31")
+	)
+	(fp_text user "PCB EDGE"
+		(at 3.75 -0.25 0)
+		(layer "F.Fab")
+		(uuid "978c3a94-2872-4be6-8bde-14379ed3c5fb")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b1af4e2b-5548-4e29-ad58-931bedd1a1d7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -2.1)
+		(size 1.6 4.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "976d5936-d4c7-4818-8135-625cc3a43ab6")
+	)
+	(pad "2" smd rect
+		(at -2.55 -2.1)
+		(size 1.3 4.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "c0a8161f-1e0f-4bc5-8291-21ddb420e570")
+	)
+	(pad "2" smd rect
+		(at -2.55 -2.1)
+		(size 1.3 4.2)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "8bef98a1-d719-4463-8d01-b70eab73905c")
+	)
+	(pad "2" smd rect
+		(at 2.55 -2.1)
+		(size 1.3 4.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "8e6058de-be74-4a8e-9184-6f65f6883073")
+	)
+	(pad "2" smd rect
+		(at 2.55 -2.1)
+		(size 1.3 4.2)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "3f5514d6-b679-412f-bf94-0ff2874d40bf")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Connector RF/3D Model/BWSMA-KE-P001.step"
+		(offset
+			(xyz 0 0 0.45)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
+)

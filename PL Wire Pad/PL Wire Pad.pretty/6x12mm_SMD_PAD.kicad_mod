@@ -1,0 +1,115 @@
+(footprint "6x12mm_SMD_PAD"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -6.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2d7ef21a-43a9-4c17-970e-dbf21c2efb3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "6x12mm_SMD_PAD"
+		(at 10.8 -9.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "09aa4990-399b-4936-942e-026962800998")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47d085f7-9b88-4cc2-820e-98e1f21b60f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "20dbd992-dca3-4141-9360-6dbffb05c902")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -3.2 -6.2)
+		(end 3.2 6.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "90ea54ce-9020-4f33-860d-5c3ea0018b95")
+	)
+	(fp_rect
+		(start -3.1 -6.1)
+		(end 3.1 6.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2ddf221f-322e-4a68-94a3-cb4fbefa8e5b")
+	)
+	(fp_text user "${Label}"
+		(at 0 -6.7 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "455e023c-d96a-4eab-a371-be346081d0b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "293b1498-04ae-4eed-a7a1-82b9afae9726")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0 90)
+		(size 12 6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(solder_paste_margin -10)
+		(solder_paste_margin_ratio 0)
+		(uuid "30f0bd00-03ba-46c3-bc0d-f4791e3aa068")
+	)
+	(embedded_fonts no)
+)

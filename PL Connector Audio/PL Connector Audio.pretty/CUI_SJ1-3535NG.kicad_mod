@@ -1,0 +1,334 @@
+(footprint "CUI_SJ1-3535NG"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 5.1 -5.2 0)
+		(layer "F.SilkS")
+		(uuid "12ec6da3-b90a-4ba2-87b9-05fd83384f9d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CUI_SJ1-3535NG"
+		(at 7.89 5.885 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d2663149-f242-4785-b1e2-7fcd4c357efe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "804d4b5b-dd0f-4685-8966-6ba01903b65d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f9b0611c-2c85-47e2-bb18-a16a535864e2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.2 -4.2)
+		(end 12.8 -4.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "af678b35-fc9f-4d40-87de-826f2825ef6f")
+	)
+	(fp_line
+		(start 12.8 -4.2)
+		(end 12.8 4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dbdb07a9-7ed3-4fc4-a123-1138c2e20f92")
+	)
+	(fp_line
+		(start 12.8 4)
+		(end -1.2 4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4a8b86b2-a67a-41bc-abb0-69e1a08aa092")
+	)
+	(fp_circle
+		(center 0 4.75)
+		(end 0.15 4.75)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "6ac536a1-4711-4b2a-8c98-376e975e98c3")
+	)
+	(fp_line
+		(start -5.45 -4.15)
+		(end -1.45 -4.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "40e451b9-f3a0-411d-a82b-9e03471ab9b9")
+	)
+	(fp_line
+		(start -5.45 2.35)
+		(end -5.45 -4.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a262cad9-4b58-47a9-8b01-803c2a48275b")
+	)
+	(fp_line
+		(start -1.45 -4.45)
+		(end 13.05 -4.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6c6a0423-ede3-4150-b94d-d6d6de376679")
+	)
+	(fp_line
+		(start -1.45 -4.15)
+		(end -1.45 -4.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f5719092-4cbd-4ea4-adff-2c7b56497982")
+	)
+	(fp_line
+		(start -1.45 2.35)
+		(end -5.45 2.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0a0f6ad9-56cc-4be5-82e3-f5c102f9a8b8")
+	)
+	(fp_line
+		(start -1.45 4.25)
+		(end -1.45 2.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ccd6baed-f4da-441b-b2f6-cfe8e1dbfbca")
+	)
+	(fp_line
+		(start 13.05 -4.45)
+		(end 13.05 4.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "959fd7db-2157-4dee-9d2c-260f47f0a2f9")
+	)
+	(fp_line
+		(start 13.05 4.25)
+		(end -1.45 4.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "268f49b3-25c5-4fa1-897b-2b885eee62d2")
+	)
+	(fp_line
+		(start -5.2 -3.9)
+		(end -1.2 -3.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a0fb9dc0-a79d-483c-a38e-fc6a34bedea8")
+	)
+	(fp_line
+		(start -5.2 2.1)
+		(end -5.2 -3.9)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ae4b8e7d-76b3-42ef-a9aa-91fe710d5d6b")
+	)
+	(fp_line
+		(start -1.2 -4.2)
+		(end 12.8 -4.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4d64f2be-e7dd-449c-9c3f-4885a7884edf")
+	)
+	(fp_line
+		(start -1.2 -3.9)
+		(end -1.2 -4.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eae74cb4-107e-480c-915d-a35b265dce87")
+	)
+	(fp_line
+		(start -1.2 2.1)
+		(end -5.2 2.1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11e3af97-cf75-4683-886a-f015ace34fbb")
+	)
+	(fp_line
+		(start -1.2 4)
+		(end -1.2 2.1)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b9c87fb6-a3f8-41fb-b7cf-d0bf2250774c")
+	)
+	(fp_line
+		(start 12.8 -4.2)
+		(end 12.8 4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d63672e7-409c-428f-8a9d-4065f71b7b84")
+	)
+	(fp_line
+		(start 12.8 4)
+		(end -1.2 4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2387ff21-6648-4f6c-b8e9-2b45000bbee2")
+	)
+	(fp_circle
+		(center 0 4.75)
+		(end 0.15 4.75)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "80011e6d-651f-490c-99f8-691538fbd69a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 4.9 -0.492 0)
+		(layer "F.Fab")
+		(uuid "bfc08c8d-dd13-4207-9f20-1cf1bf70fb09")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at 0 0)
+		(size 1.508 3.016)
+		(drill oval 1 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "e7bc56cb-50e2-4ef8-ad72-7521250b476f")
+	)
+	(pad "2" thru_hole oval
+		(at 2.4 -2)
+		(size 1.508 3.016)
+		(drill oval 1 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "657175c0-993b-4cdf-9e85-9608b70242aa")
+	)
+	(pad "3" thru_hole oval
+		(at 7.9 -2)
+		(size 1.508 3.016)
+		(drill oval 1 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "cf819780-8444-42dd-bb2d-7a8495989fee")
+	)
+	(pad "4" thru_hole oval
+		(at 11.6 0)
+		(size 1.508 3.016)
+		(drill oval 1 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "bca8aef9-851e-4c88-ae74-b7ed1b4ac3b4")
+	)
+	(pad "5" thru_hole oval
+		(at 6.1 0)
+		(size 1.508 3.016)
+		(drill oval 1 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "cb541f7c-3c3e-41d9-85b0-3a9bebedcb9f")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Connector Audio/3D Model/SJ1-3535NG.step"
+		(offset
+			(xyz -5.2 0.9 7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 -0 -180)
+		)
+	)
+)

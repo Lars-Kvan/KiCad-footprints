@@ -1,0 +1,222 @@
+(footprint "Potentiometer_Bourns_3224X_Vertical"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Potentiometer, vertical, Bourns 3224X, https://www.bourns.com/docs/Product-Datasheets/3224.pdf")
+	(tags "Potentiometer vertical Bourns 3224X")
+	(property "Reference" "REF**"
+		(at -0.1 -4.75 0)
+		(layer "F.SilkS")
+		(uuid "fa2ce51f-1a5a-46e6-b4e4-18d95e7f67d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Potentiometer_Bourns_3224X_Vertical"
+		(at -0.1 4.75 0)
+		(layer "F.Fab")
+		(uuid "69529e07-0d44-4692-ad49-99fb3555e87b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8e23aa13-e738-4f66-bb82-1bd6ca7de37b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2370454d-67e8-474f-a994-15ce307444bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.61 -1.86)
+		(end -2.03 -1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "610020d0-1a12-4141-b459-4062a453508e")
+	)
+	(fp_line
+		(start -2.61 1.86)
+		(end -2.61 -1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a01cf2e8-8e26-464e-83f4-b1ce11fddf14")
+	)
+	(fp_line
+		(start -1.23 1.86)
+		(end -2.61 1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "91bbaf70-f82e-4fd3-aa9e-2ee76b89ff22")
+	)
+	(fp_line
+		(start -0.27 -1.86)
+		(end 0.27 -1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "01f71a45-6655-4e9d-a9b9-d85322b815ec")
+	)
+	(fp_line
+		(start 2.03 -1.86)
+		(end 2.41 -1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "062b9744-91b3-44b3-b39b-2b6322678eb7")
+	)
+	(fp_line
+		(start 2.41 -1.86)
+		(end 2.41 1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "88c097f8-a2c3-4e7c-9aa4-67ac9c33ec5e")
+	)
+	(fp_line
+		(start 2.41 1.86)
+		(end 1.23 1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "201ed4cd-9967-4bda-8620-916f81dfb74a")
+	)
+	(fp_rect
+		(start -2.75 -3.75)
+		(end 2.55 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9c1e1d4c-3aae-404f-acea-94a7bf842bbf")
+	)
+	(fp_line
+		(start -0.823 0.081)
+		(end -1.869 1.127)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b0facf31-1bde-4db2-909b-a23da7faae13")
+	)
+	(fp_line
+		(start -0.731 0.173)
+		(end -1.777 1.219)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "42277b35-9288-4b79-a6ca-acc73e1379a2")
+	)
+	(fp_rect
+		(start -2.5 -1.75)
+		(end 2.3 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7933717f-4d62-44a1-9ab8-5acd5988d515")
+	)
+	(fp_circle
+		(center -1.3 0.65)
+		(end -0.55 0.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "533486c0-dacf-4001-b0bc-879642321854")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.5 0 0)
+		(layer "F.Fab")
+		(uuid "07164e8a-8d89-41ba-adc2-24bc3ac55f4e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 1.15 -2.55)
+		(size 1.3 1.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.192308)
+		(uuid "819764ef-f7b9-4225-84aa-a3ce457810ab")
+	)
+	(pad "2" smd roundrect
+		(at 0 2.55)
+		(size 2 1.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.131579)
+		(uuid "038559bd-aff1-4b61-94ff-1c2e3df9518b")
+	)
+	(pad "3" smd roundrect
+		(at -1.15 -2.55)
+		(size 1.3 1.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.192308)
+		(uuid "4f29b709-93c4-4167-bd77-e03d914b665d")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Potentiometer_SMD.3dshapes/Potentiometer_Bourns_3224X_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

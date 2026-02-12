@@ -1,0 +1,276 @@
+(footprint "BPH853025R5-101T"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Inductor, Walsin, WLFM201209x, 2.0x1.25x0.9mm, (http://www.passivecomponent.com/wp-content/uploads/inductor/WLFM_C_series.pdf), generated with kicad-footprint-generator gen_inductor.py")
+	(tags "ferrite multilayer power")
+	(property "Reference" "REF**"
+		(at 0 -2.3 0)
+		(layer "F.SilkS")
+		(uuid "ba3ef11b-68cd-4469-9343-fc304f488110")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "BPH853025R5-101T"
+		(at 0 1.58 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7c0ff14-db8b-440f-ba98-9ec375aee68a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5095dab6-29c9-4a3e-8b83-fa5a3b5cd632")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a456795c-53dc-469f-80a0-33bb13ea0f92")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.25 1.5)
+		(end 3.25 1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2d5b2c1c-31e9-43f2-abfc-eaf8f985406c")
+	)
+	(fp_line
+		(start 3.25 -1.5)
+		(end -3.25 -1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1765bb36-9536-421b-bced-ddc988d4026a")
+	)
+	(fp_line
+		(start -5.45 0.9)
+		(end -5.45 -0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "82ff55ca-cb7a-4f37-9295-2f2acbcf0b0a")
+	)
+	(fp_line
+		(start -4.4 -1.7)
+		(end -4.4 -0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9ae0bdb0-884f-4c5e-bc9f-3e38e5cc8583")
+	)
+	(fp_line
+		(start -4.4 -1.7)
+		(end 4.5 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dfcb5239-6207-4476-adae-f28e7335ad50")
+	)
+	(fp_line
+		(start -4.4 -0.9)
+		(end -5.45 -0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0135c130-ab68-4c09-8fcd-993c1ae924a5")
+	)
+	(fp_line
+		(start -4.4 0.9)
+		(end -5.45 0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "95a4c05c-f6e2-4705-8ba4-f005d11b93fa")
+	)
+	(fp_line
+		(start -4.4 1.7)
+		(end -4.4 0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2603e261-f3a6-48e4-b53c-f8be57deea34")
+	)
+	(fp_line
+		(start -4.4 1.7)
+		(end 4.5 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5d4cd971-3793-4100-8041-590092fd5227")
+	)
+	(fp_line
+		(start 4.5 -1.7)
+		(end 4.5 -0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1837aab6-81eb-4843-b072-628705654dc7")
+	)
+	(fp_line
+		(start 4.5 -0.9)
+		(end 5.5 -0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5a576e9d-e3ac-4527-aee9-63700cede3b6")
+	)
+	(fp_line
+		(start 4.5 0.9)
+		(end 5.5 0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bd65a363-6090-4011-850c-84b58b36634e")
+	)
+	(fp_line
+		(start 4.5 1.7)
+		(end 4.5 0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ff0282d3-9009-4e25-af09-cd911405a058")
+	)
+	(fp_line
+		(start 5.5 -0.9)
+		(end 5.5 0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9b470a4b-e2e8-4c71-a29d-a867c05c59b4")
+	)
+	(fp_rect
+		(start -4.25 -1.5)
+		(end 4.25 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7dfbde96-89cc-4886-b732-7207b2d1be9b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "8bb91665-8a4c-4bf2-85dd-1871e34d2a58")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.8 0)
+		(size 3.1 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c9f37756-f6d9-46a2-b97e-2e65cc3568e1")
+	)
+	(pad "2" smd roundrect
+		(at 3.8 0)
+		(size 3.1 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e826be1f-c1aa-4dae-a136-9603a279f5b2")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "968213aa-1ae2-41ee-a7d1-b8bed2249834")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.1)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+		)
+		(polygon
+			(pts
+				(xy -3 -1.5) (xy 3 -1.5) (xy 3 1.5) (xy -3 1.5)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Magnetics Ferrite/3D Model/BPH853025R5-101T.step"
+		(offset
+			(xyz 0 0 0.3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

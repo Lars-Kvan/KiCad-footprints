@@ -1,0 +1,202 @@
+(footprint "FC-DLF2218-2R5-100A-LF"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.05 -10.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "0b16bb3f-5c77-4189-b7ac-6f02ae346377")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "FC-DLF2218-2R5-100A-LF"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6f879f37-7de7-4fee-867b-ec4e339219f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e97fe79f-906f-4222-ac52-26007dea4365")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8943b943-688c-46de-bab8-2d93c744507d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -11.25 -9.25)
+		(end 11.25 9.25)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "3b523609-583a-4b67-8719-7501967da538")
+	)
+	(fp_circle
+		(center -11 -10)
+		(end -10.9 -10)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "4038c39f-c17b-4de8-8cea-c7af4df0ee08")
+	)
+	(fp_line
+		(start -12 -10)
+		(end -12 10)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "03302e8e-bcfb-41f5-9e28-6a46dc607de2")
+	)
+	(fp_line
+		(start -12 10)
+		(end 12 10)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "35c59b45-6e50-457d-a5ba-231290b8048c")
+	)
+	(fp_line
+		(start 12 -10)
+		(end -12 -10)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7e6e623f-13f9-4fed-8760-f32a174f9ac3")
+	)
+	(fp_line
+		(start 12 10)
+		(end 12 -10)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c0623395-3831-4daa-a301-10ac7a36bbd5")
+	)
+	(fp_rect
+		(start -11.25 -9.25)
+		(end 11.15 9.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8708059b-4503-42c8-a36b-a84d4ab28808")
+	)
+	(fp_circle
+		(center -11 -10)
+		(end -10.9 -10)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "931356f6-a45c-40bd-b33d-9ec5fa5ba84c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.05 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8d1adac0-af11-487e-9fd2-1175eb0f8c21")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at -5.1 -4.05)
+		(size 7.2 3)
+		(drill oval 6.2 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "e6bd70ab-d12e-4673-8899-5928ab4b1617")
+	)
+	(pad "2" thru_hole oval
+		(at 5.1 -4.05)
+		(size 7.2 3)
+		(drill oval 6.2 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "3d2f42e7-9873-42bd-9cdf-692876e828f9")
+	)
+	(pad "3" thru_hole oval
+		(at 5.1 4.05)
+		(size 7.2 3)
+		(drill oval 6.2 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "a8512e47-1c85-4d8c-9fba-e6f76e2ccd1f")
+	)
+	(pad "4" thru_hole oval
+		(at -5.1 4.05)
+		(size 7.2 3)
+		(drill oval 6.2 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "b0fc2363-05e3-4271-8888-6e871a047a8d")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Magnetics Choke/3D Model/FC-DLF2218-2R5-100A-LF v4.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
