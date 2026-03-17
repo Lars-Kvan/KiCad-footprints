@@ -1,0 +1,338 @@
+(footprint "BatteryHolder_Keystone_1042_1x18650"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Battery holder, Keystone 1042, battery type 1x18650, http://www.keyelco.com/product.cfm/product_id/918, generated with kicad-footprint-generator StandardBox_generator.py")
+	(tags "horizontal single")
+	(property "Reference" "REF**"
+		(at 0 -11.53 0)
+		(layer "F.SilkS")
+		(uuid "d8e73cd8-1110-4d50-95f3-37e1d552ed47")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "BatteryHolder_Keystone_1042_1x18650"
+		(at 0 11.53 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f410e0a5-d1de-4ecb-9025-8e69d4e806dd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d5f1495c-2750-4af2-904a-75561c85f1c3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "50cbb4e4-7f2c-47cf-b180-84e55ec2223d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -38.89 -10.685)
+		(end 38.89 -10.685)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d2e2f0b2-59b8-4503-9b4b-169b70293264")
+	)
+	(fp_line
+		(start -38.89 -3.51)
+		(end -38.89 -10.685)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "73bb6f21-e2f5-40f5-94a1-7d411dea46ed")
+	)
+	(fp_line
+		(start -38.89 10.685)
+		(end -38.89 3.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "38520fec-2f78-4f6e-a402-c8f61e4836fe")
+	)
+	(fp_line
+		(start 38.89 -10.685)
+		(end 38.89 -3.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6f763fc4-50e7-40fb-8294-d4441ea83ff6")
+	)
+	(fp_line
+		(start 38.89 3.51)
+		(end 38.89 10.685)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "72b18efb-675a-48f5-827f-e68fdda403ec")
+	)
+	(fp_line
+		(start 38.89 10.685)
+		(end -38.89 10.685)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5dd1d191-9a9e-4d31-8e6d-083bd07d0a45")
+	)
+	(fp_line
+		(start -43.94 -3.75)
+		(end -39.03 -3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "58b21a25-20b8-41f7-aa9d-26bd9352f42f")
+	)
+	(fp_line
+		(start -43.94 3.75)
+		(end -43.94 -3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0d2b3bc9-10f4-4c1b-820a-5acad9d5d8a8")
+	)
+	(fp_line
+		(start -39.03 -10.83)
+		(end 39.03 -10.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f110facd-bbb3-4685-b4f1-068aea2ca07c")
+	)
+	(fp_line
+		(start -39.03 -3.75)
+		(end -39.03 -10.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "26a97183-b976-490e-8fc9-58b12fecdba4")
+	)
+	(fp_line
+		(start -39.03 3.75)
+		(end -43.94 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8719867c-c289-4629-869b-337bc042da57")
+	)
+	(fp_line
+		(start -39.03 10.83)
+		(end -39.03 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f587358f-6720-4aaa-8f66-8978979398fa")
+	)
+	(fp_line
+		(start 39.03 -10.83)
+		(end 39.03 -3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6aab93ee-e51c-4bdd-9331-0c23503c0f22")
+	)
+	(fp_line
+		(start 39.03 -3.75)
+		(end 43.94 -3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "58082a8b-ebe5-4290-a866-3077149f7f22")
+	)
+	(fp_line
+		(start 39.03 3.75)
+		(end 39.03 10.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b75ab93c-300b-464e-85fb-a72b2150f19d")
+	)
+	(fp_line
+		(start 39.03 10.83)
+		(end -39.03 10.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "632c13ef-e025-4d88-8dc4-3cb7a6deaeab")
+	)
+	(fp_line
+		(start 43.94 -3.75)
+		(end 43.94 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cca1acd6-1405-498c-85ab-6b0a5825d880")
+	)
+	(fp_line
+		(start 43.94 3.75)
+		(end 39.03 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f4131172-1921-4750-b521-59f2d0c18627")
+	)
+	(fp_rect
+		(start -38.53 -10.325)
+		(end 38.53 10.325)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9b115364-0807-42cb-a74f-1e37b958b08e")
+	)
+	(fp_text user "+"
+		(at -40.15 -5 0)
+		(layer "F.SilkS")
+		(uuid "59af4e20-aea6-43cb-b3f5-a21c1b5df92b")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 1)
+			)
+		)
+	)
+	(fp_text user "-"
+		(at 40.15 -5 0)
+		(layer "F.SilkS")
+		(uuid "a77ed993-7f14-4bb7-a6c3-d9c08d38bfbb")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 1)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0f1e652f-a2d1-4478-adfb-9d381b845452")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "+"
+		(at -35 -0.15 0)
+		(layer "F.Fab")
+		(uuid "9a2ee226-834c-4304-acb0-76576bf1219d")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -36.13 -8)
+		(size 2.39 2.39)
+		(drill 2.39)
+		(layers "*.Cu" "*.Mask")
+		(uuid "40ba9895-2a60-4965-a0f2-fe1cbabd2e2b")
+	)
+	(pad "" np_thru_hole circle
+		(at -27.62 8)
+		(size 3.45 3.45)
+		(drill 3.45)
+		(layers "*.Cu" "*.Mask")
+		(uuid "4ef6edb1-33dd-44c4-a134-f977ba8192ee")
+	)
+	(pad "" np_thru_hole circle
+		(at 27.62 -8)
+		(size 3.45 3.45)
+		(drill 3.45)
+		(layers "*.Cu" "*.Mask")
+		(uuid "4aa9b311-40f7-4667-a0b8-ce84a0d3de48")
+	)
+	(pad "1" smd roundrect
+		(at -39.69 0)
+		(size 7.5 6.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.038462)
+		(uuid "4a443144-6855-4f0c-a5af-147d8589541b")
+	)
+	(pad "2" smd roundrect
+		(at 39.69 0)
+		(size 7.5 6.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.038462)
+		(uuid "3c1cc5db-5337-449a-99e0-15e9d7eea5e6")
+	)
+	(embedded_fonts no)
+	(model "${PL_FOOTPRINT_DIR}/PL Battery/3D Model/1042.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
