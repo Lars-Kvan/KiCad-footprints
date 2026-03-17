@@ -240,6 +240,38 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "dc0d46e8-b95f-452e-928d-9625b9254966")
 	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "42354c22-75de-4107-bd1d-f42c648312ee")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -1.1557 -2.9972) (xy 1.1557 -2.9972) (xy 1.1557 2.9972) (xy -1.1557 2.9972)
+			)
+		)
+	)
 	(embedded_fonts no)
 	(model "${PL_FOOTPRINT_DIR}/PL Magnetics Inductor Power/3D Model/srn6045.stp"
 		(offset
