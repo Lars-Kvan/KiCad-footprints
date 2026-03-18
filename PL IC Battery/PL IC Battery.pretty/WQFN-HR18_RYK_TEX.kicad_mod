@@ -54,110 +54,6 @@
 		)
 	)
 	(attr smd)
-	(fp_poly
-		(pts
-			(xy -1.700502 -0.949999) (xy -1.700502 -0.749999) (xy -0.924999 -0.750001) (xy -0.924999 -1.45) (xy -1.124999 -1.45)
-			(xy -1.124999 -0.949999)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "2275295d-e68d-43d1-b6fd-87944403ca66")
-	)
-	(fp_poly
-		(pts
-			(xy -1.700502 0.949999) (xy -1.700502 0.750001) (xy -0.924999 0.750001) (xy -0.924999 1.45) (xy -1.124999 1.45)
-			(xy -1.124999 0.949999)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "90535746-6357-4686-9642-c16d1c0effc7")
-	)
-	(fp_poly
-		(pts
-			(xy 0.874999 -1.45) (xy 0.874999 -0.750001) (xy 1.699999 -0.749999) (xy 1.699999 -0.949999) (xy 1.074999 -0.949999)
-			(xy 1.074999 -1.45)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "00bb1821-ca4d-482d-a024-1924a1d22286")
-	)
-	(fp_poly
-		(pts
-			(xy 0.874999 1.45) (xy 0.874999 0.749999) (xy 1.699999 0.749999) (xy 1.699999 0.949999) (xy 1.074999 0.949999)
-			(xy 1.074999 1.45)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "a3ae718e-3f14-493c-9602-104d659ed8ae")
-	)
-	(fp_poly
-		(pts
-			(xy -1.700502 -0.949999) (xy -1.700502 -0.749999) (xy -0.924999 -0.750001) (xy -0.924999 -1.45) (xy -1.124999 -1.45)
-			(xy -1.124999 -0.949999)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Mask")
-		(uuid "5cda6054-d8e8-40b2-9aa1-a1723cd7f894")
-	)
-	(fp_poly
-		(pts
-			(xy -1.700502 0.949999) (xy -1.700502 0.750001) (xy -0.924999 0.750001) (xy -0.924999 1.45) (xy -1.124999 1.45)
-			(xy -1.124999 0.949999)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Mask")
-		(uuid "2c47a792-2eff-404e-9db0-82da0601841c")
-	)
-	(fp_poly
-		(pts
-			(xy 0.874999 -1.45) (xy 0.874999 -0.750001) (xy 1.699999 -0.749999) (xy 1.699999 -0.949999) (xy 1.074999 -0.949999)
-			(xy 1.074999 -1.45)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Mask")
-		(uuid "feb04629-2841-4741-a13d-fea579158372")
-	)
-	(fp_poly
-		(pts
-			(xy 0.874999 1.45) (xy 0.874999 0.749999) (xy 1.699999 0.749999) (xy 1.699999 0.949999) (xy 1.074999 0.949999)
-			(xy 1.074999 1.45)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Mask")
-		(uuid "145e68ff-b3c7-4abe-9366-e7b22886e31a")
-	)
 	(fp_line
 		(start -1.6764 -1.4224)
 		(end -1.457739 -1.4224)
@@ -208,58 +104,6 @@
 		(fill no)
 		(layer "F.SilkS")
 		(uuid "c91e5747-5daa-4b9f-a196-3e59d8e9c369")
-	)
-	(fp_poly
-		(pts
-			(xy -1.700502 -0.949999) (xy -1.700502 -0.749999) (xy -0.924999 -0.750001) (xy -0.924999 -1.45) (xy -1.124999 -1.45)
-			(xy -1.124999 -0.949999)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Paste")
-		(uuid "a1f5c186-3cbc-46ae-86c9-f96cdc2048cb")
-	)
-	(fp_poly
-		(pts
-			(xy -1.700502 0.949999) (xy -1.700502 0.750001) (xy -0.924999 0.750001) (xy -0.924999 1.45) (xy -1.124999 1.45)
-			(xy -1.124999 0.949999)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Paste")
-		(uuid "d926bad7-3187-4d9f-8889-21ddf149a23c")
-	)
-	(fp_poly
-		(pts
-			(xy 0.874999 -1.45) (xy 0.874999 -0.750001) (xy 1.699999 -0.749999) (xy 1.699999 -0.949999) (xy 1.074999 -0.949999)
-			(xy 1.074999 -1.45)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Paste")
-		(uuid "969c6596-9d6f-4c38-af6e-0bc7de66c313")
-	)
-	(fp_poly
-		(pts
-			(xy 0.874999 1.45) (xy 0.874999 0.749999) (xy 1.699999 0.749999) (xy 1.699999 0.949999) (xy 1.074999 0.949999)
-			(xy 1.074999 1.45)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Paste")
-		(uuid "1d7e335e-95a5-4e54-8e40-99776dd5bab2")
 	)
 	(fp_line
 		(start -1.954502 -1.203999)
@@ -724,10 +568,24 @@
 			)
 		)
 	)
-	(pad "1" smd rect
+	(pad "1" smd custom
 		(at -1.024992 -0.850001)
 		(size 0.127 0.127)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.67551 -0.099998) (xy -0.67551 0.100002) (xy 0.099993 0.1) (xy 0.099993 -0.599999) (xy -0.100007 -0.599999)
+					(xy -0.100007 -0.099998)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
 		(uuid "4c5b9e6d-25da-4623-a238-18ddf2c81516")
 	)
 	(pad "2" smd rect
@@ -748,10 +606,24 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "2e571f36-bab5-4d01-a277-2f0505741a86")
 	)
-	(pad "5" smd rect
+	(pad "5" smd custom
 		(at -1.024992 0.850001)
 		(size 0.127 0.127)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.67551 0.099998) (xy -0.67551 -0.1) (xy 0.099993 -0.1) (xy 0.099993 0.599999) (xy -0.100007 0.599999)
+					(xy -0.100007 0.099998)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
 		(uuid "903faf47-7344-4f2a-94bb-628f2c8c17d2")
 	)
 	(pad "6" smd rect
@@ -778,10 +650,24 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "36074d48-828c-4449-b55e-e14131c968e8")
 	)
-	(pad "10" smd rect
+	(pad "10" smd custom
 		(at 0.974999 0.850001)
 		(size 0.127 0.127)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.1 0.599999) (xy -0.1 -0.100002) (xy 0.725 -0.100002) (xy 0.725 0.099998) (xy 0.1 0.099998)
+					(xy 0.1 0.599999)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
 		(uuid "65335f55-e6f4-4676-b457-7c5089ac1d35")
 	)
 	(pad "11" smd rect
@@ -802,10 +688,23 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "565b8705-723d-44e6-ac42-f27acf57673a")
 	)
-	(pad "14" smd rect
+	(pad "14" smd custom
 		(at 0.974999 -0.850001)
 		(size 0.127 0.127)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.1 -0.599999) (xy -0.1 0.1) (xy 0.725 0.100002) (xy 0.725 -0.099998) (xy 0.1 -0.099998) (xy 0.1 -0.599999)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
 		(uuid "2c518c98-17c5-4759-89b1-2fb7c5253d3b")
 	)
 	(pad "15" smd rect
