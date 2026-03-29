@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720">
+  <title>Safety Warning Symbols</title>
+  <desc>Sheet containing high voltage, ESD, hot surface, RF or non-ionizing radiation, laser or optical hazard, and general caution symbols.</desc>
+  <style>
+    .frame {
+      fill: none;
+      stroke: #000;
+      stroke-width: 16;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon {
+      fill: none;
+      stroke: #000;
+      stroke-width: 12;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .solid {
+      fill: #000;
+      stroke: none;
+    }
+
+    .label {
+      fill: #000;
+      font-family: "DejaVu Sans", Arial, sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      text-anchor: middle;
+    }
+  </style>
+
+  <defs>
+    <g id="warning-triangle">
+      <path class="frame" d="M 0 -115 L 100 58 L -100 58 Z" />
+    </g>
+  </defs>
+
+  <rect width="960" height="720" fill="#fff" />
+
+  <g id="symbol-high-voltage" transform="translate(160 170)">
+    <use href="#warning-triangle" />
+    <path class="solid" d="M 10 -70 L -30 -10 L -10 -10 L 0 45 L 30 -25 L 10 -25 Z" />
+    <path class="solid" d="M 5,-70 L -30,-5 H -5 L -20,55 L 35,-20 H 5 Z" />
+    <text class="label" x="0" y="160">High Voltage</text>
+  </g>
+
+  <g id="symbol-esd" transform="translate(480 170)">
+    <use href="#warning-triangle" />
+    <g transform="translate(0, 5)">
+      <path class="solid" d="M -40 25 L -15 25 C 5 25, 20 15, 20 0 C 20 -15, 5 -25, -15 -25 C -25 -25, -35 -20, -40 -10 L -30 -5 C -25 -15, -15 -15, -10 -15 C 5 -15, 10 -5, 10 0 C 10 5, 5 15, -10 15 L -40 15 Z" />
+      <path class="solid" d="M -35 -30 L -25 -35 L 35 25 L 25 30 Z" />
+    <path class="icon" style="stroke-width: 6;" d="M -30,10 A 35,35 0 0 1 15,-25" />
+    <g class="icon" style="stroke-width: 8;">
+      <path d="M -15,-5 C -25,-5 -25,20 -5,20" />
+      <path d="M -15,-5 L -5,-15" />
+      <path d="M -10,-1 L 18,-6" />
+      <path d="M -10,6 L 22,3" />
+      <path d="M -10,13 L 15,12" />
+      <path d="M -5,20 L 5,19" />
+    </g>
+    <line stroke="#fff" stroke-width="16" stroke-linecap="round" x1="-35" y1="-25" x2="25" y2="35" />
+    <line class="icon" style="stroke-width: 8;" x1="-35" y1="-25" x2="25" y2="35" />
+    <text class="label" x="0" y="160">ESD</text>
+  </g>
+
+  <g id="symbol-hot-surface" transform="translate(800 170)">
+    <use href="#warning-triangle" />
+    <path class="icon" d="M -25 15 Q -15 0 -25 -15 T -25 -45" />
+    <path class="icon" d="M 0 15 Q 10 0 0 -15 T 0 -45" />
+    <path class="icon" d="M 25 15 Q 35 0 25 -15 T 25 -45" />
+    <path class="icon" d="M -45 35 H 45" />
+    <rect class="solid" x="-35" y="30" width="70" height="8" rx="4" />
+    <path class="icon" style="stroke-width: 8;" d="M -20,15 C -20,0 -35,0 -35,-15 C -35,-30 -20,-30 -20,-45" />
+    <path class="icon" style="stroke-width: 8;" d="M 0,15 C 0,0 -15,0 -15,-15 C -15,-30 0,-30 0,-45" />
+    <path class="icon" style="stroke-width: 8;" d="M 20,15 C 20,0 5,0 5,-15 C 5,-30 20,-30 20,-45" />
+    <text class="label" x="0" y="160">Hot Surface</text>
+  </g>
+
+  <g id="symbol-rf" transform="translate(160 500)">
+    <use href="#warning-triangle" />
+    <path class="solid" d="M -6 40 L 0 -15 L 6 40 Z" />
+    <circle class="solid" cx="0" cy="-25" r="7" />
+    <path class="icon" d="M 12 -40 A 18 18 0 0 1 12 -10" />
+    <path class="icon" d="M 24 -52 A 36 36 0 0 1 24 2" />
+    <path class="icon" d="M -12 -40 A 18 18 0 0 0 -12 -10" />
+    <path class="icon" d="M -24 -52 A 36 36 0 0 0 -24 2" />
+    <circle class="solid" cx="0" cy="-25" r="6" />
+    <path class="solid" d="M -4,45 L -4,-10 L 4,-10 L 4,45 Z" />
+    <path class="icon" style="stroke-width: 6;" d="M -15,-25 A 15,15 0 0 0 -15,5" />
+    <path class="icon" style="stroke-width: 6;" d="M -25,-25 A 25,25 0 0 0 -25,15" />
+    <path class="icon" style="stroke-width: 6;" d="M 15,-25 A 15,15 0 0 1 15,5" />
+    <path class="icon" style="stroke-width: 6;" d="M 25,-25 A 25,25 0 0 1 25,15" />
+    <text class="label" x="0" y="148">
+      <tspan x="0" dy="0">RF / Non-Ionizing</tspan>
+      <tspan x="0" dy="28">Radiation</tspan>
+    </text>
+  </g>
+
+  <g id="symbol-laser" transform="translate(480 500)">
+    <use href="#warning-triangle" />
+    <circle class="solid" cx="-20" cy="0" r="6" />
+    <path class="icon" d="M -20 -15 V -25 M -30 -10 L -38 -18 M -35 0 H -45 M -30 10 L -38 18 M -20 15 V 25 M -10 10 L -2 18 M -10 -10 L -2 -18" />
+    <path class="solid" d="M -10 -4 H 40 V 4 H -10 Z" />
+    <path class="icon" style="stroke-width: 4;" d="M -20,-32 V -44 M -20,-8 V 4 M -32,-20 H -44 M -8,-20 H 4 M -28,-28 L -36,-36 M -12,-12 L -4,-4 M -28,-12 L -36,-4 M -12,-28 L -4,-36" />
+    <circle class="solid" cx="-20" cy="-20" r="5" />
+    <polygon class="solid" points="-16,-16 40,30 25,30" />
+    <line class="icon" style="stroke-width: 8;" x1="-10" y1="34" x2="45" y2="34" />
+    <text class="label" x="0" y="148">
+      <tspan x="0" dy="0">Laser / Optical</tspan>
+      <tspan x="0" dy="28">Hazard</tspan>
+    </text>
+  </g>
+
+  <g id="symbol-general-caution" transform="translate(800 500)">
+    <use href="#warning-triangle" />
+    <path class="solid" d="M -8 -50 L 8 -50 L 5 15 L -5 15 Z" />
+    <circle class="solid" cx="0" cy="35" r="8" />
+    <path class="solid" d="M -10,-55 C -10,-65 10,-65 10,-55 L 6,15 C 6,22 -6,22 -6,15 Z" />
+    <circle class="solid" cx="0" cy="38" r="10" />
+    <text class="label" x="0" y="148">
+      <tspan x="0" dy="0">General Caution</tspan>
+      <tspan x="0" dy="28">Read Manual</tspan>
+    </text>
+  </g>
+</svg>
