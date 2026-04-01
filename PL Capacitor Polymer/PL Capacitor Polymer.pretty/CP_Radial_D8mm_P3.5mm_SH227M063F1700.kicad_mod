@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -6.25 0)
 		(layer "F.SilkS")
-		(uuid "11340794-9c31-4519-9fe7-393b51f01b7f")
+		(uuid "2e3eb0da-866a-4dde-90b1-acdad81fba79")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 2.5 6.25 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b415c0b9-ee1f-47e4-bda7-1a69146177f0")
+		(uuid "b30127a2-7e7f-472d-b48e-243f3e673edc")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "32ef1b44-1046-4692-8bea-0caed84efa01")
+		(uuid "eecdcf27-3bd5-45b0-85b3-6dda00080167")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d3a71dcb-b0cf-4c43-b21d-18bdafa0800a")
+		(uuid "9b562b64-a7af-44d5-a617-b281c725fa7a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -54,7 +54,7 @@
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "b1988039-7e82-4617-9035-cfb9df1f94c0")
+		(uuid "ccb68300-aef8-43c9-87f8-5f7df42dde91")
 		(effects
 			(font
 				(size 1 1)
@@ -72,7 +72,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "2f035005-0f83-4455-b032-922978bd1778")
+		(uuid "54482fba-2097-4f12-8db1-b1f4cbd30574")
 	)
 	(fp_line
 		(start -3.75 -3.35)
@@ -82,7 +82,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "03c4bb81-f021-497e-ad5a-17921da3fcb8")
+		(uuid "d30dc41d-36c5-4d0a-9358-0a047f436753")
 	)
 	(fp_line
 		(start 0 -4.12)
@@ -92,7 +92,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "d08ba0a0-224e-4848-9364-fcf3305330fe")
+		(uuid "19ac32ec-278c-4bbc-86c5-11b3b803cac4")
 	)
 	(fp_line
 		(start 0 -4)
@@ -102,7 +102,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "7738f049-2231-45c8-9952-80a5982ac26a")
+		(uuid "1158712d-8c1c-4409-8068-4a125689612c")
 	)
 	(fp_line
 		(start 0 -3)
@@ -112,7 +112,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "88ff3ee4-5752-4d90-81eb-f7317dee50d8")
+		(uuid "9fb7ee0a-644f-44f7-9610-6d8017c5f45a")
 	)
 	(fp_line
 		(start 0 -2)
@@ -122,7 +122,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "6f932600-e60a-4912-9ed0-813e232bc13f")
+		(uuid "a98f8e7f-4811-4e68-ad2b-b8d0f849045c")
 	)
 	(fp_line
 		(start 0 -1)
@@ -132,7 +132,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "02a99797-d994-45b4-84d4-95729bf33355")
+		(uuid "3af7cdcc-7b52-4ac2-8744-c0f3954f6131")
 	)
 	(fp_line
 		(start 0 0)
@@ -142,7 +142,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "1c35ec57-9bb3-4fee-804b-0ce678aaa72d")
+		(uuid "ecf7b0eb-5cd1-41ac-b94a-fc7d414d1d43")
 	)
 	(fp_line
 		(start 0 1)
@@ -152,7 +152,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "1289d2c1-dbe3-42fe-909e-a8766c2c7bf4")
+		(uuid "8b11b59a-77e1-4e21-b81f-0d4e9fb9c80c")
 	)
 	(fp_line
 		(start 0 2)
@@ -162,7 +162,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "a986e8e7-0666-42fe-9844-5632754e9924")
+		(uuid "88e94618-f8a2-4f16-8536-978c4d34b491")
 	)
 	(fp_line
 		(start 0 3)
@@ -172,7 +172,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "938166b0-d665-46e3-93c6-ebc1d88e1f56")
+		(uuid "7bc72489-79cc-4337-8662-4ed13f50aebb")
 	)
 	(fp_line
 		(start 0 4)
@@ -182,7 +182,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "4a9b075b-c3aa-45ed-a23a-3bcd7aba59dc")
+		(uuid "16885ce0-37d5-48ef-a770-b7cbdb510ff4")
 	)
 	(fp_line
 		(start 1.014618 3.985382)
@@ -192,7 +192,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "30982a33-a8d6-425a-b260-0b30e13ce4e7")
+		(uuid "9f63a89c-a5fa-483b-a194-4c9bbb97c864")
 	)
 	(fp_line
 		(start 2.1 -1.1)
@@ -202,7 +202,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "f2565a82-4eff-46ac-91a5-922a794de2db")
+		(uuid "c976acb3-5dcf-4c38-97c9-41c1df83203d")
 	)
 	(fp_line
 		(start 2.8 -0.8)
@@ -212,7 +212,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "b663fd47-311d-4af7-aea8-470197007889")
+		(uuid "11979d39-ed08-4389-9e71-27d9ec363862")
 	)
 	(fp_line
 		(start 2.85 0.15)
@@ -222,7 +222,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "e28386cf-b25c-40c5-80f7-71f812d73b4a")
+		(uuid "84f5977b-50cd-4a07-850f-290c3ae84c93")
 	)
 	(fp_line
 		(start 2.9 -2.9)
@@ -232,7 +232,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "f840055c-2bce-4249-b1f4-4805ec249629")
+		(uuid "5a174ceb-41b3-4a39-bbef-a73f12011ba1")
 	)
 	(fp_circle
 		(center 0 0)
@@ -243,7 +243,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "9deddf5f-3e0c-4cbc-afca-62d0cb86db3d")
+		(uuid "f67eb1a0-05b5-4ff5-aca3-ead45ad93421")
 	)
 	(fp_circle
 		(center 0 0)
@@ -254,7 +254,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "1363fb77-d411-41a7-bf24-f6f61c09a41e")
+		(uuid "dc9e61df-f676-4fb3-91fb-b7f51c2aa0db")
 	)
 	(fp_line
 		(start -2.8 -2.1875)
@@ -264,7 +264,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "d6d61b67-860a-421a-89e1-17fea855b137")
+		(uuid "19885ea7-ff1d-48a7-ac91-1a2f1d70c2a0")
 	)
 	(fp_line
 		(start -2.3 -2.6875)
@@ -274,7 +274,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "0c78a51f-ed2e-4e25-a171-11edc296297f")
+		(uuid "1e04fd7b-2cf7-4c73-83a0-04fa59ddc28a")
 	)
 	(fp_circle
 		(center 0 0)
@@ -285,12 +285,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "e3e628f4-5ffc-4bdd-ae6f-4cc8eea373c9")
+		(uuid "bd6cfbb1-2feb-489c-8e66-a826a1a47198")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "e93a4b2d-a2f0-431d-9fa6-7151e4d92c11")
+		(uuid "c76ab87d-f9bb-4d5b-8b1f-428456dd346c")
 		(effects
 			(font
 				(size 1 1)
@@ -305,7 +305,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.125)
-		(uuid "f02e39a5-1120-4432-a8ed-b20bc44fe0bc")
+		(uuid "4c9fb603-b001-424a-8222-875d1804f2ed")
 	)
 	(pad "2" thru_hole circle
 		(at 1.75 0)
@@ -313,10 +313,10 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "5a7dbddf-259e-4703-b61f-79a616ccab8f")
+		(uuid "02e4c2a0-5286-4e28-8c0d-855b2afe0847")
 	)
 	(embedded_fonts no)
-	(model "C:/Users/larsk/Documents/footprints/PL Capacitor Polymer/3D Model/CP_Polymer_SH227M063F1700.step"
+	(model "${PL_FOOTPRINT_DIR}/PL Capacitor Polymer/3D Model/CP_Polymer_SH227M063F1700.step"
 		(offset
 			(xyz 0 0 0)
 		)
