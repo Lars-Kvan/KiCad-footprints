@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -6.25 0)
 		(layer "F.SilkS")
-		(uuid "2e3eb0da-866a-4dde-90b1-acdad81fba79")
+		(uuid "ab9e64c0-d9c5-42f8-9d65-e053157e54e5")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 2.5 6.25 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b30127a2-7e7f-472d-b48e-243f3e673edc")
+		(uuid "1ef72bad-1a91-4c0c-a6f2-4d22350b7fa8")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "eecdcf27-3bd5-45b0-85b3-6dda00080167")
+		(uuid "a5345e31-b396-4e9e-8157-6dfea00f6987")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9b562b64-a7af-44d5-a617-b281c725fa7a")
+		(uuid "f5e421c2-dff4-4678-82ba-f91495214720")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -54,7 +54,7 @@
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "ccb68300-aef8-43c9-87f8-5f7df42dde91")
+		(uuid "d9ed3581-5301-4f10-82ac-5d3c72fb381d")
 		(effects
 			(font
 				(size 1 1)
@@ -72,7 +72,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "54482fba-2097-4f12-8db1-b1f4cbd30574")
+		(uuid "c2548c3c-8abb-462e-8962-49342d43c20d")
 	)
 	(fp_line
 		(start -3.75 -3.35)
@@ -82,7 +82,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d30dc41d-36c5-4d0a-9358-0a047f436753")
+		(uuid "997fba44-cbf4-4ce3-a3e5-a44891f782e2")
 	)
 	(fp_line
 		(start 0 -4.12)
@@ -92,7 +92,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "19ac32ec-278c-4bbc-86c5-11b3b803cac4")
+		(uuid "598ec7dc-6e47-4ad4-b0c6-0aaeaf9bd880")
 	)
 	(fp_line
 		(start 0 -4)
@@ -102,7 +102,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "1158712d-8c1c-4409-8068-4a125689612c")
+		(uuid "f1329fbe-4d8c-4e65-a666-b8b024714582")
 	)
 	(fp_line
 		(start 0 -3)
@@ -112,7 +112,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "9fb7ee0a-644f-44f7-9610-6d8017c5f45a")
+		(uuid "f0786d04-ceef-42d2-a82b-6c2c58d188b9")
 	)
 	(fp_line
 		(start 0 -2)
@@ -122,7 +122,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "a98f8e7f-4811-4e68-ad2b-b8d0f849045c")
+		(uuid "01d6f270-f201-4e4f-975f-b6e66aad3dfd")
 	)
 	(fp_line
 		(start 0 -1)
@@ -132,7 +132,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "3af7cdcc-7b52-4ac2-8744-c0f3954f6131")
+		(uuid "496a0432-6006-4c07-906a-dc5dc5ebf4d9")
 	)
 	(fp_line
 		(start 0 0)
@@ -142,7 +142,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "ecf7b0eb-5cd1-41ac-b94a-fc7d414d1d43")
+		(uuid "82ecedd6-32c7-4a88-88a3-89bfc0333915")
 	)
 	(fp_line
 		(start 0 1)
@@ -152,7 +152,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "8b11b59a-77e1-4e21-b81f-0d4e9fb9c80c")
+		(uuid "36b01606-0cbe-41c1-bf30-355e5408e776")
 	)
 	(fp_line
 		(start 0 2)
@@ -162,7 +162,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "88e94618-f8a2-4f16-8536-978c4d34b491")
+		(uuid "1d0f3f16-0b7f-4fde-9a49-c78bc9a5bed3")
 	)
 	(fp_line
 		(start 0 3)
@@ -172,7 +172,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "7bc72489-79cc-4337-8662-4ed13f50aebb")
+		(uuid "1c7b7bb6-63ec-444b-9d8e-30a42c9fc777")
 	)
 	(fp_line
 		(start 0 4)
@@ -182,7 +182,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "16885ce0-37d5-48ef-a770-b7cbdb510ff4")
+		(uuid "d6278bf4-117a-42f6-aaaf-434056b1d65a")
 	)
 	(fp_line
 		(start 1.014618 3.985382)
@@ -192,7 +192,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "9f63a89c-a5fa-483b-a194-4c9bbb97c864")
+		(uuid "fba91520-b761-458f-915a-79994a4fbbef")
 	)
 	(fp_line
 		(start 2.1 -1.1)
@@ -202,7 +202,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "c976acb3-5dcf-4c38-97c9-41c1df83203d")
+		(uuid "0450f459-ff9e-4d39-a01f-3ca68e44b737")
 	)
 	(fp_line
 		(start 2.8 -0.8)
@@ -212,7 +212,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "11979d39-ed08-4389-9e71-27d9ec363862")
+		(uuid "f581ba00-a43d-4ec0-b262-3e24539a5c6f")
 	)
 	(fp_line
 		(start 2.85 0.15)
@@ -222,7 +222,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "84f5977b-50cd-4a07-850f-290c3ae84c93")
+		(uuid "2a272a52-f9f0-4731-966d-b82c83f23967")
 	)
 	(fp_line
 		(start 2.9 -2.9)
@@ -232,7 +232,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "5a174ceb-41b3-4a39-bbef-a73f12011ba1")
+		(uuid "e9126300-ef60-4068-b0d8-fe5409671a0a")
 	)
 	(fp_circle
 		(center 0 0)
@@ -243,7 +243,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "f67eb1a0-05b5-4ff5-aca3-ead45ad93421")
+		(uuid "905ad283-3a67-4852-a3d0-6d5a609f6ab5")
 	)
 	(fp_circle
 		(center 0 0)
@@ -254,7 +254,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "dc9e61df-f676-4fb3-91fb-b7f51c2aa0db")
+		(uuid "4ea22081-202e-459d-b453-4901f9799199")
 	)
 	(fp_line
 		(start -2.8 -2.1875)
@@ -264,7 +264,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "19885ea7-ff1d-48a7-ac91-1a2f1d70c2a0")
+		(uuid "510e8c5f-eab1-42bf-9240-5a69de499e85")
 	)
 	(fp_line
 		(start -2.3 -2.6875)
@@ -274,7 +274,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "1e04fd7b-2cf7-4c73-83a0-04fa59ddc28a")
+		(uuid "7eaf0efc-7cb6-4738-9765-520382296cab")
 	)
 	(fp_circle
 		(center 0 0)
@@ -285,12 +285,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "bd6cfbb1-2feb-489c-8e66-a826a1a47198")
+		(uuid "01492846-f85a-4f6d-8291-bef957fbf293")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "c76ab87d-f9bb-4d5b-8b1f-428456dd346c")
+		(uuid "5bd5a6d5-e078-4430-bd91-31761613ec08")
 		(effects
 			(font
 				(size 1 1)
@@ -305,7 +305,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.125)
-		(uuid "4c9fb603-b001-424a-8222-875d1804f2ed")
+		(uuid "f373e35e-697c-4c76-8a56-ea6d6bad9555")
 	)
 	(pad "2" thru_hole circle
 		(at 1.75 0)
@@ -313,10 +313,10 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "02e4c2a0-5286-4e28-8c0d-855b2afe0847")
+		(uuid "7c933e0d-7ed1-4a7f-b897-3fe4783fbfc1")
 	)
 	(embedded_fonts no)
-	(model "${PL_FOOTPRINT_DIR}/PL Capacitor Polymer/3D Model/CP_Polymer_SH227M063F1700.step"
+	(model "${PL}/footprints/PL Capacitor Polymer/3D Model/CP_Polymer_SH227M063F1700.step"
 		(offset
 			(xyz 0 0 0)
 		)
