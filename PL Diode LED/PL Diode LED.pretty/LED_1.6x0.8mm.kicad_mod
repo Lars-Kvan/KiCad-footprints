@@ -1,0 +1,258 @@
+(footprint "LED_1.6x0.8mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Topview dual http://optoelectronics.liteon.com/upload/download/DS22-2009-0072/LTST-C295KGKRKT.PDF")
+	(tags "SMD Top view Dual colour")
+	(property "Reference" "REF**"
+		(at 0 -1.45 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3c9456d1-8ef9-436e-8e8d-f8c87eb083c4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED_1.6x0.8mm"
+		(at 0 1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7305866c-d4fa-45db-a16b-e7c29caed6b1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9ef60a9-8848-4a46-9d88-cbf15df00a6e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "03905101-7ef6-4e0d-b347-b4c25cf54ddb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.1 -0.8)
+		(end -0.75 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6fbeef90-0fea-4a6e-bf7b-666c24ce6bfd")
+	)
+	(fp_line
+		(start -1.1 -0.4)
+		(end -1.1 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "49b1bdf0-e801-4a95-aa56-5ea6e8416962")
+	)
+	(fp_line
+		(start -1.1 0.8)
+		(end -1.1 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7f5af487-3500-4903-b93f-210a2ba8edb7")
+	)
+	(fp_line
+		(start 1.1 -0.8)
+		(end 0 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0179b845-c20a-41e2-9008-2f5ca467c7f5")
+	)
+	(fp_line
+		(start 1.1 -0.8)
+		(end 1.1 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cd16e473-e222-42fb-8996-c8f083d6c60f")
+	)
+	(fp_line
+		(start 1.1 0.8)
+		(end -1.1 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "49f82589-3df4-4de1-a216-f512f2f3cd5b")
+	)
+	(fp_line
+		(start -1.05 -0.75)
+		(end 1.05 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3961d99c-8678-4d5e-865c-2baafb2185f6")
+	)
+	(fp_line
+		(start -1.05 0.75)
+		(end -1.05 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9ad362dc-2299-4b09-b1c3-463a0ff8f7c8")
+	)
+	(fp_line
+		(start 1.05 -0.75)
+		(end 1.05 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bab69192-08e2-4d30-a013-f07cd21e4cf9")
+	)
+	(fp_line
+		(start 1.05 0.75)
+		(end -1.05 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6e2d9ad6-bbcf-484b-8c52-440645964b5b")
+	)
+	(fp_line
+		(start -1.05 -0.4)
+		(end -0.7 -0.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e5a69a50-0803-4204-8347-cbdb5f369885")
+	)
+	(fp_line
+		(start -1.05 0.75)
+		(end -1.05 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "048bd113-601b-486a-87cc-a80a282d8a32")
+	)
+	(fp_line
+		(start -0.7 -0.75)
+		(end 1.05 -0.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "64bffc3c-7201-45b5-885b-3f288c8fe77f")
+	)
+	(fp_line
+		(start 1.05 -0.75)
+		(end 1.05 0.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "10893732-791a-4868-b603-3d3e42c338c4")
+	)
+	(fp_line
+		(start 1.05 0.75)
+		(end -1.05 0.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a4e0711-0bf9-4337-a2ca-c918bdd84bd1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b8f2b65c-a41b-458e-9f95-de52371a76f8")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.6 -0.35 90)
+		(size 0.4 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2301e6fd-bc36-4151-8b18-28079da2b5ac")
+	)
+	(pad "2" smd rect
+		(at -0.6 0.35 90)
+		(size 0.4 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "424e6166-f5ab-4893-b9c6-259114e0a38f")
+	)
+	(pad "3" smd rect
+		(at 0.6 -0.35 90)
+		(size 0.4 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "62b90fea-a585-438e-9087-375e8e689f68")
+	)
+	(pad "4" smd rect
+		(at 0.6 0.35 90)
+		(size 0.4 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0c89842e-1f6f-4689-8940-2d88eaa56adf")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_LiteOn_LTST-C295K_1.6x0.8mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
