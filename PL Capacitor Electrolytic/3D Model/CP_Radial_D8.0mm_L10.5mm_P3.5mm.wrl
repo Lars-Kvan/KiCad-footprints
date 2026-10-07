@@ -1,0 +1,85 @@
+#VRML V2.0 utf8
+# Generated radial electrolytic capacitor: CP_Radial_D8.0mm_L10.5mm_P3.5mm
+# Units are millimetres; KiCad applies the model at the footprint origin.
+DEF SLEEVE Appearance { material Material { diffuseColor 0.035 0.090 0.145 specularColor 0.600 0.600 0.600 shininess 0.280 } }
+DEF POLARITY_STRIPE Appearance { material Material { diffuseColor 0.820 0.860 0.900 specularColor 0.600 0.600 0.600 shininess 0.150 } }
+DEF METAL Appearance { material Material { diffuseColor 0.600 0.620 0.650 specularColor 0.600 0.600 0.600 shininess 0.720 } }
+DEF VENT Appearance { material Material { diffuseColor 0.180 0.200 0.225 specularColor 0.600 0.600 0.600 shininess 0.360 } }
+DEF BUNG Appearance { material Material { diffuseColor 0.050 0.050 0.055 specularColor 0.600 0.600 0.600 shininess 0.120 } }
+DEF LEAD Appearance { material Material { diffuseColor 0.760 0.770 0.780 specularColor 0.600 0.600 0.600 shininess 0.820 } }
+# Bottom rubber bung
+Transform { translation 0.0000 0.0000 0.1900 children [
+  Shape { appearance USE BUNG geometry Cylinder { radius 2.8800 height 0.3800 } }
+] }
+# Lower crimped metal rim
+Transform { translation 0.0000 0.0000 0.5550 children [
+  Shape { appearance USE METAL geometry Cylinder { radius 4.0000 height 0.3500 } }
+] }
+# Coloured shrink sleeve
+Transform { translation 0.0000 0.0000 5.2800 children [
+  Shape { appearance USE SLEEVE geometry Cylinder { radius 3.9000 height 9.8000 } }
+] }
+# Polarity stripe, facing pad 2
+Shape { appearance USE POLARITY_STRIPE geometry IndexedFaceSet {
+  coord Coordinate { point [
+      3.5994 -1.6025 0.4800,
+      3.5994 -1.6025 10.1000,
+      3.7208 -1.2957 0.4800,
+      3.7208 -1.2957 10.1000,
+      3.8162 -0.9798 0.4800,
+      3.8162 -0.9798 10.1000,
+      3.8848 -0.6571 0.4800,
+      3.8848 -0.6571 10.1000,
+      3.9262 -0.3297 0.4800,
+      3.9262 -0.3297 10.1000,
+      3.9400 0.0000 0.4800,
+      3.9400 0.0000 10.1000,
+      3.9262 0.3297 0.4800,
+      3.9262 0.3297 10.1000,
+      3.8848 0.6571 0.4800,
+      3.8848 0.6571 10.1000,
+      3.8162 0.9798 0.4800,
+      3.8162 0.9798 10.1000,
+      3.7208 1.2957 0.4800,
+      3.7208 1.2957 10.1000,
+      3.5994 1.6025 0.4800,
+      3.5994 1.6025 10.1000
+  ] }
+  coordIndex [
+    0, 2, 3, 1, -1,
+    2, 4, 5, 3, -1,
+    4, 6, 7, 5, -1,
+    6, 8, 9, 7, -1,
+    8, 10, 11, 9, -1,
+    10, 12, 13, 11, -1,
+    12, 14, 15, 13, -1,
+    14, 16, 17, 15, -1,
+    16, 18, 19, 17, -1,
+    18, 20, 21, 19, -1
+  ]
+  solid FALSE
+} }
+# Top rolled metal rim
+Transform { translation 0.0000 0.0000 10.3400 children [
+  Shape { appearance USE METAL geometry Cylinder { radius 4.0000 height 0.3200 } }
+] }
+# Top aluminium cap
+Transform { translation 0.0000 0.0000 10.4100 children [
+  Shape { appearance USE METAL geometry Cylinder { radius 3.6200 height 0.1000 } }
+] }
+# Stamped vent horizontal groove
+Transform { translation 0.0000 0.0000 10.4770 children [
+  Shape { appearance USE VENT geometry Box { size 5.4000 0.1800 0.0450 } }
+] }
+# Stamped vent vertical groove
+Transform { translation 0.0000 0.0000 10.4780 children [
+  Shape { appearance USE VENT geometry Box { size 0.1800 5.4000 0.0450 } }
+] }
+# Positive lead
+Transform { translation -1.7500 0.0000 -1.4100 children [
+  Shape { appearance USE LEAD geometry Cylinder { radius 0.3200 height 3.2000 } }
+] }
+# Negative lead
+Transform { translation 1.7500 0.0000 -1.4100 children [
+  Shape { appearance USE LEAD geometry Cylinder { radius 0.3200 height 3.2000 } }
+] }
