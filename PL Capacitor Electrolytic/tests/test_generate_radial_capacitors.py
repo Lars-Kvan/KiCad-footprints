@@ -50,11 +50,35 @@ class RadialCapacitorGeneratorTests(unittest.TestCase):
         self.assertIn('(footprint "CP_Radial_D8.0mm_L10.5mm_P3.5mm"', footprint)
         self.assertIn('(at -1.75 0.0)', footprint)
         self.assertIn('(at 1.75 0.0)', footprint)
+        self.assertIn('(generator "radial_capacitor_generator")', footprint)
+        self.assertIn('${PL_FOOTPRINT_DIR}/PL Capacitor Electrolytic', footprint)
+        self.assertIn('(start -4.4 -2.4)', footprint)
+        self.assertIn('(end -3.6 -2.4)', footprint)
+        self.assertGreater(len(generator._hatch_segments(self.spec)), 10)
+        self.assertTrue(
+            any(
+                abs((end[0] * end[0] + end[1] * end[1]) ** 0.5 - 4.12) < 0.001
+                for _, end in generator._hatch_segments(self.spec)
+            )
+        )
         self.assertIn('CP_Radial_D8.0mm_L10.5mm_P3.5mm.wrl', footprint)
         self.assertIn("#VRML V2.0 utf8", model)
-        self.assertIn("Top rolled metal rim", model)
-        self.assertIn("Stamped vent horizontal groove", model)
+        self.assertIn("scale 1.0 1.0 1.0", model)
+        self.assertIn(
+            "Nominal body envelope: D=8.0000 mm, H=10.5000 mm; "
+            "lead pitch=3.5000 mm",
+            model,
+        )
+        self.assertNotIn("0.3937007874", model)
+        self.assertAlmostEqual(generator.VRML_UNITS_PER_MM * 2.54, 1.0)
+        self.assertIn("translation -0.6890 0.0000", model)
+        self.assertNotIn("geometry Cylinder", model)
+        self.assertGreater(model.count("geometry IndexedFaceSet"), 7)
+        self.assertIn("Matte shrink sleeve with filleted ends", model)
+        self.assertIn("Subtle rolled top lip", model)
+        self.assertIn("Stamped pressure-relief vent ray 1", model)
         self.assertIn("Polarity stripe", model)
+        self.assertNotIn("geometry Torus", model)
 
     def test_sample_csv_generates_the_selected_test_footprint(self) -> None:
         sample_csv = Path(__file__).parents[1] / "radial_capacitor_specs.csv"

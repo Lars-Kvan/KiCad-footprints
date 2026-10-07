@@ -27,6 +27,7 @@ DEFAULT_DRILL_MM = Decimal("1.0")
 DEFAULT_PAD_DIAMETER_MM = Decimal("2.0")
 DIMENSION_QUANTUM = Decimal("0.1")
 UUID_NAMESPACE = uuid.UUID("7791d488-0638-4b7c-9ebc-82c39010c2f7")
+VRML_UNITS_PER_MM = 1.0 / 2.54
 
 
 class SpecificationError(ValueError):
@@ -280,16 +281,18 @@ def _subtract_circle_from_segment(
 def _hatch_segments(spec: CapacitorSpec) -> list[tuple[tuple[float, float], tuple[float, float]]]:
     """Create clipped 45-degree silk hatching in the positive-x half of the body."""
 
-    radius = float(spec.diameter_mm / 2 - Decimal("0.35"))
+    radius = float(spec.diameter_mm / 2 + Decimal("0.12"))
     if radius <= 0.25:
         return []
-    spacing = max(0.8, min(1.2, radius / 3.5))
+    spacing = max(0.55, min(0.80, radius / 5.5))
     hatch_offset = -radius
     segments: list[tuple[tuple[float, float], tuple[float, float]]] = []
     keep_out_radius = float(spec.pad_diameter_mm / 2 + Decimal("0.25"))
     pad_two = (float(spec.pitch_mm / 2), 0.0)
 
-    while hatch_offset <= radius + 0.0001:
+    # For y = -x + c, c reaches sqrt(2) * radius in the upper-right
+    # quadrant.  Stopping at radius leaves that quadrant visibly bare.
+    while hatch_offset <= math.sqrt(2.0) * radius + 0.0001:
         # y = -x + hatch_offset intersects x^2 + y^2 = radius^2.
         determinant = 2.0 * radius * radius - hatch_offset * hatch_offset
         if determinant > 0:
@@ -308,6 +311,27 @@ def _hatch_segments(spec: CapacitorSpec) -> list[tuple[tuple[float, float], tupl
     return segments
 
 
+def _negative_boundary_segments(
+    spec: CapacitorSpec,
+) -> list[tuple[tuple[float, float], tuple[float, float]]]:
+    """Create the centre divider while maintaining silk clearance to both pads."""
+
+    radius = float(spec.diameter_mm / 2 + Decimal("0.12"))
+    if radius <= 0.25:
+        return []
+    segments = [((0.0, -radius), (0.0, radius))]
+    keep_out_radius = float(spec.pad_diameter_mm / 2 + Decimal("0.25"))
+    pitch_half = float(spec.pitch_mm / 2)
+    for pad_center in ((-pitch_half, 0.0), (pitch_half, 0.0)):
+        clipped: list[tuple[tuple[float, float], tuple[float, float]]] = []
+        for start, end in segments:
+            clipped.extend(
+                _subtract_circle_from_segment(start, end, pad_center, keep_out_radius)
+            )
+        segments = clipped
+    return [segment for segment in segments if math.dist(*segment) > 0.12]
+
+
 def build_footprint(spec: CapacitorSpec) -> str:
     """Build a KiCad 9 footprint as S-expression text."""
 
@@ -316,9 +340,9 @@ def build_footprint(spec: CapacitorSpec) -> str:
     pad_x = float(spec.pitch_mm / 2)
     ref_y = -radius - 1.25
     value_y = radius + 1.25
-    plus_x = -radius + min(0.35, radius * 0.12)
+    plus_x = -radius
     plus_y = -radius * 0.60
-    plus_half = 0.50
+    plus_half = 0.40
     description = (
         "CP, Radial electrolytic capacitor, "
         f"pin pitch={spec.pitch_mm:.1f}mm, diameter={spec.diameter_mm:.1f}mm, "
@@ -333,8 +357,8 @@ def build_footprint(spec: CapacitorSpec) -> str:
     lines = [
         f"(footprint \"{name}\"",
         "\t(version 20241229)",
-        "\t(generator \"pcbnew\")",
-        "\t(generator_version \"9.0\")",
+        "\t(generator \"radial_capacitor_generator\")",
+        "\t(generator_version \"1.1\")",
         "\t(layer \"F.Cu\")",
         f"\t(descr \"{description}\")",
         f"\t(tags \"{tags}\")",
@@ -362,12 +386,17 @@ def build_footprint(spec: CapacitorSpec) -> str:
         *_circle(name, "silk-body", radius + 0.12, 0.15, "F.SilkS"),
     ]
 
+    for index, (start, end) in enumerate(_negative_boundary_segments(spec)):
+        lines.extend(
+            _line(name, f"silk-negative-boundary-{index}", start, end, 0.15, "F.SilkS")
+        )
+
     for index, (start, end) in enumerate(_hatch_segments(spec)):
         lines.extend(_line(name, f"silk-hatch-{index}", start, end, 0.15, "F.SilkS"))
 
     lines.extend(
         [
-            *_circle(name, "courtyard", radius + 0.25, 0.05, "F.CrtYd"),
+            *_circle(name, "courtyard", radius + 0.50, 0.05, "F.CrtYd"),
             *_circle(name, "fab-body", radius, 0.10, "F.Fab"),
             *_line(
                 name,
@@ -414,7 +443,7 @@ def build_footprint(spec: CapacitorSpec) -> str:
             f"\t\t(uuid \"{_uuid(name, 'pad-2')}\")",
             "\t)",
             "\t(embedded_fonts no)",
-            f"\t(model \"${{PL}}/footprints/PL Capacitor Electrolytic/3D Model/{name}.wrl\"",
+            f"\t(model \"${{PL_FOOTPRINT_DIR}}/PL Capacitor Electrolytic/3D Model/{name}.wrl\"",
             "\t\t(offset",
             "\t\t\t(xyz 0.0 0.0 0.0)",
             "\t\t)",
@@ -432,12 +461,25 @@ def build_footprint(spec: CapacitorSpec) -> str:
     return "\n".join(lines)
 
 
-def _material(name: str, color: tuple[float, float, float], shininess: float) -> str:
+def _material(
+    name: str,
+    color: tuple[float, float, float],
+    shininess: float,
+    specular: tuple[float, float, float] = (0.10, 0.10, 0.10),
+    ambient: float = 0.20,
+) -> str:
     return (
         f"DEF {name} Appearance {{ material Material {{ diffuseColor {color[0]:.3f} "
-        f"{color[1]:.3f} {color[2]:.3f} specularColor 0.600 0.600 0.600 "
+        f"{color[1]:.3f} {color[2]:.3f} specularColor {specular[0]:.3f} "
+        f"{specular[1]:.3f} {specular[2]:.3f} ambientIntensity {ambient:.3f} "
         f"shininess {shininess:.3f} }} }}"
     )
+
+
+def _vrml_units(value_mm: float) -> float:
+    """Convert millimetres to KiCad's legacy external-VRML unit (0.1 inch)."""
+
+    return value_mm * VRML_UNITS_PER_MM
 
 
 def _cylinder(
@@ -448,12 +490,82 @@ def _cylinder(
     material: str,
     x: float = 0.0,
     y: float = 0.0,
+    segments: int = 48,
+    edge_radius: float = 0.0,
 ) -> str:
+    """Return a closed cylindrical mesh with optional rounded edge profiles."""
+
+    z_bottom = -height / 2.0
+    z_top = height / 2.0
+    edge_radius = max(0.0, min(edge_radius, radius * 0.45, height * 0.45))
+    if edge_radius > 0:
+        curve_steps = 6
+        profile: list[tuple[float, float]] = []
+        for index in range(curve_steps + 1):
+            angle = -math.pi / 2.0 + (math.pi / 2.0) * index / curve_steps
+            profile.append(
+                (
+                    radius - edge_radius + edge_radius * math.cos(angle),
+                    z_bottom + edge_radius + edge_radius * math.sin(angle),
+                )
+            )
+        for index in range(curve_steps + 1):
+            angle = (math.pi / 2.0) * index / curve_steps
+            profile.append(
+                (
+                    radius - edge_radius + edge_radius * math.cos(angle),
+                    z_top - edge_radius + edge_radius * math.sin(angle),
+                )
+            )
+    else:
+        profile = [(radius, z_bottom), (radius, z_top)]
+
+    vertices: list[tuple[float, float, float]] = []
+    for ring_radius, z in profile:
+        for index in range(segments):
+            angle = 2.0 * math.pi * index / segments
+            vertices.append(
+                (ring_radius * math.cos(angle), ring_radius * math.sin(angle), z)
+            )
+    bottom_center = len(vertices)
+    vertices.append((0.0, 0.0, z_bottom))
+    top_center = len(vertices)
+    vertices.append((0.0, 0.0, z_top))
+
+    faces: list[str] = []
+    for ring_index in range(len(profile) - 1):
+        lower_ring = ring_index * segments
+        upper_ring = (ring_index + 1) * segments
+        for index in range(segments):
+            next_index = (index + 1) % segments
+            faces.append(
+                f"{lower_ring + index}, {lower_ring + next_index}, "
+                f"{upper_ring + next_index}, {upper_ring + index}, -1"
+            )
+
+    top_ring = (len(profile) - 1) * segments
+    for index in range(segments):
+        next_index = (index + 1) % segments
+        faces.append(f"{bottom_center}, {next_index}, {index}, -1")
+        faces.append(f"{top_center}, {top_ring + index}, {top_ring + next_index}, -1")
+
+    points = ",\n        ".join(
+        f"{_vrml_units(point_x):.4f} {_vrml_units(point_y):.4f} "
+        f"{_vrml_units(point_z):.4f}"
+        for point_x, point_y, point_z in vertices
+    )
+    indices = ",\n        ".join(faces)
     return (
         f"# {label}\n"
-        f"Transform {{ translation {x:.4f} {y:.4f} {center_z:.4f} children [\n"
-        f"  Shape {{ appearance USE {material} geometry Cylinder {{ radius {radius:.4f} "
-        f"height {height:.4f} }} }}\n] }}"
+        f"Transform {{ translation {_vrml_units(x):.4f} {_vrml_units(y):.4f} "
+        f"{_vrml_units(center_z):.4f} children [\n"
+        f"  Shape {{ appearance USE {material} geometry IndexedFaceSet {{\n"
+        f"    coord Coordinate {{ point [\n        {points}\n    ] }}\n"
+        f"    coordIndex [\n        {indices}\n    ]\n"
+        "    creaseAngle 0.80\n"
+        "    solid TRUE\n"
+        "  } }\n"
+        "] }"
     )
 
 
@@ -462,21 +574,26 @@ def _box(
     size: tuple[float, float, float],
     center: tuple[float, float, float],
     material: str,
+    rotation_z: float = 0.0,
 ) -> str:
+    rotation = f" rotation 0 0 1 {rotation_z:.6f}" if rotation_z else ""
     return (
         f"# {label}\n"
-        f"Transform {{ translation {center[0]:.4f} {center[1]:.4f} {center[2]:.4f} children [\n"
-        f"  Shape {{ appearance USE {material} geometry Box {{ size {size[0]:.4f} "
-        f"{size[1]:.4f} {size[2]:.4f} }} }}\n] }}"
+        f"Transform {{ translation {_vrml_units(center[0]):.4f} "
+        f"{_vrml_units(center[1]):.4f} {_vrml_units(center[2]):.4f}"
+        f"{rotation} children [\n"
+        f"  Shape {{ appearance USE {material} geometry Box {{ size "
+        f"{_vrml_units(size[0]):.4f} {_vrml_units(size[1]):.4f} "
+        f"{_vrml_units(size[2]):.4f} }} }}\n] }}"
     )
 
 
 def _polarity_stripe(radius: float, z_min: float, z_max: float) -> str:
     """Create a slightly proud curved stripe on the negative (pad 2) side."""
 
-    segments = 10
-    start_angle = math.radians(-24.0)
-    end_angle = math.radians(24.0)
+    segments = 8
+    start_angle = math.radians(-18.0)
+    end_angle = math.radians(18.0)
     vertices: list[tuple[float, float, float]] = []
     for index in range(segments + 1):
         angle = start_angle + (end_angle - start_angle) * index / segments
@@ -484,7 +601,10 @@ def _polarity_stripe(radius: float, z_min: float, z_max: float) -> str:
         y = (radius + 0.02) * math.sin(angle)
         vertices.extend([(x, y, z_min), (x, y, z_max)])
 
-    points = ",\n      ".join(f"{x:.4f} {y:.4f} {z:.4f}" for x, y, z in vertices)
+    points = ",\n      ".join(
+        f"{_vrml_units(x):.4f} {_vrml_units(y):.4f} {_vrml_units(z):.4f}"
+        for x, y, z in vertices
+    )
     faces = []
     for index in range(segments):
         bottom_a = 2 * index
@@ -502,81 +622,147 @@ def _polarity_stripe(radius: float, z_min: float, z_max: float) -> str:
 
 
 def build_vrml(spec: CapacitorSpec) -> str:
-    """Build a detailed VRML 2.0 radial-capacitor model in millimetres."""
+    """Build a detailed VRML 2.0 radial-capacitor model for KiCad."""
 
     body_radius = float(spec.diameter_mm / 2)
     body_height = float(spec.height_mm)
-    lower_rim_height = min(0.35, body_height * 0.08)
-    upper_rim_height = min(0.32, body_height * 0.08)
-    bung_height = min(0.38, body_height * 0.10)
-    sleeve_bottom = bung_height
-    sleeve_top = max(sleeve_bottom + 0.2, body_height - upper_rim_height)
+    fillet_radius = min(0.18, body_radius * 0.055, body_height * 0.02)
+    bung_height = min(0.14, body_height * 0.025)
+    lower_lip_height = min(0.28, body_height * 0.04)
+    upper_lip_height = min(0.36, body_height * 0.05)
+    sleeve_bottom = max(0.16, lower_lip_height * 0.64)
+    sleeve_top = body_height - max(0.20, upper_lip_height * 0.56)
     sleeve_height = sleeve_top - sleeve_bottom
+    top_cap_height = min(0.06, body_height * 0.012)
+    top_cap_center_z = body_height - 0.012 - top_cap_height / 2.0
     lead_radius = min(float(spec.drill_mm) * 0.32, 0.34)
     lead_height = 3.2
-    lead_center_z = sleeve_bottom / 2 - lead_height / 2
+    lead_center_z = bung_height - lead_height / 2
     pitch_half = float(spec.pitch_mm / 2)
-    vent_length = max(1.2, min(body_radius * 1.35, body_radius * 2 - 0.8))
+    top_cap_radius = max(0.20, body_radius - 0.30)
+    vent_inner_radius = max(0.08, top_cap_radius * 0.04)
+    vent_outer_radius = max(0.55, top_cap_radius * 0.68)
+    vent_ray_length = vent_outer_radius - vent_inner_radius
+    vent_center_radius = (vent_inner_radius + vent_outer_radius) / 2.0
+    stripe_bottom = sleeve_bottom + 0.16
+    stripe_top = sleeve_top - 0.12
+    stripe_markings = [
+        _box(
+            f"Negative stripe marking {index + 1}",
+            (0.030, max(0.55, body_radius * 0.19), 0.085),
+            (
+                body_radius + 0.025,
+                0.0,
+                stripe_bottom + (stripe_top - stripe_bottom) * fraction,
+            ),
+            "MARKING",
+        )
+        for index, fraction in enumerate((0.18, 0.34, 0.50, 0.66, 0.82))
+    ]
+    vent_rays = [
+        _box(
+            f"Stamped pressure-relief vent ray {index + 1}",
+            (vent_ray_length, 0.11, 0.012),
+            (
+                math.cos(angle) * vent_center_radius,
+                math.sin(angle) * vent_center_radius,
+                body_height - 0.006,
+            ),
+            "VENT",
+            angle,
+        )
+        for index, angle in enumerate(
+            (0.0, 2.0 * math.pi / 3.0, 4.0 * math.pi / 3.0)
+        )
+    ]
 
     return "\n".join(
         [
             "#VRML V2.0 utf8",
             f"# Generated radial electrolytic capacitor: {spec.name}",
-            "# Units are millimetres; KiCad applies the model at the footprint origin.",
-            _material("SLEEVE", (0.035, 0.090, 0.145), 0.28),
-            _material("POLARITY_STRIPE", (0.820, 0.860, 0.900), 0.15),
-            _material("METAL", (0.600, 0.620, 0.650), 0.72),
-            _material("VENT", (0.180, 0.200, 0.225), 0.36),
-            _material("BUNG", (0.050, 0.050, 0.055), 0.12),
-            _material("LEAD", (0.760, 0.770, 0.780), 0.82),
+            f"# Nominal body envelope: D={body_radius * 2:.4f} mm, "
+            f"H={body_height:.4f} mm; lead pitch={float(spec.pitch_mm):.4f} mm",
+            "# Geometry inputs are millimetres, encoded as KiCad legacy VRML",
+            "# units (0.1 inch / 2.54 mm) for correct footprint-model sizing.",
+            _material(
+                "SLEEVE",
+                (0.045, 0.050, 0.055),
+                0.10,
+                (0.080, 0.085, 0.090),
+            ),
+            _material(
+                "POLARITY_STRIPE",
+                (0.430, 0.445, 0.460),
+                0.12,
+                (0.120, 0.125, 0.130),
+            ),
+            _material("MARKING", (0.055, 0.060, 0.065), 0.06, (0.04, 0.04, 0.04)),
+            _material(
+                "RIM_METAL",
+                (0.360, 0.375, 0.390),
+                0.42,
+                (0.320, 0.330, 0.340),
+            ),
+            _material(
+                "ALUMINIUM",
+                (0.570, 0.585, 0.600),
+                0.48,
+                (0.420, 0.430, 0.440),
+            ),
+            _material("VENT", (0.170, 0.180, 0.190), 0.15, (0.12, 0.12, 0.12)),
+            _material("BUNG", (0.025, 0.027, 0.030), 0.04, (0.03, 0.03, 0.03)),
+            _material(
+                "LEAD",
+                (0.560, 0.575, 0.590),
+                0.62,
+                (0.480, 0.490, 0.500),
+            ),
+            "Transform {",
+            "  scale 1.0 1.0 1.0",
+            "  children [",
             _cylinder(
                 "Bottom rubber bung",
                 body_radius * 0.72,
                 bung_height,
                 bung_height / 2,
                 "BUNG",
+                edge_radius=min(0.035, bung_height * 0.25),
             ),
             _cylinder(
-                "Lower crimped metal rim",
+                "Subtle lower crimped lip",
+                body_radius - 0.035,
+                lower_lip_height,
+                0.03 + lower_lip_height / 2.0,
+                "RIM_METAL",
+                edge_radius=min(0.075, lower_lip_height * 0.30),
+            ),
+            _cylinder(
+                "Matte shrink sleeve with filleted ends",
                 body_radius,
-                lower_rim_height,
-                sleeve_bottom + lower_rim_height / 2,
-                "METAL",
-            ),
-            _cylinder(
-                "Coloured shrink sleeve",
-                body_radius - 0.10,
                 sleeve_height,
                 sleeve_bottom + sleeve_height / 2,
                 "SLEEVE",
+                edge_radius=fillet_radius,
             ),
-            _polarity_stripe(body_radius - 0.08, sleeve_bottom + 0.10, sleeve_top - 0.08),
+            _polarity_stripe(body_radius, stripe_bottom, stripe_top),
+            *stripe_markings,
             _cylinder(
-                "Top rolled metal rim",
-                body_radius,
-                upper_rim_height,
-                sleeve_top + upper_rim_height / 2,
-                "METAL",
+                "Subtle rolled top lip",
+                body_radius - 0.035,
+                upper_lip_height,
+                body_height - 0.045 - upper_lip_height / 2.0,
+                "RIM_METAL",
+                edge_radius=min(0.095, upper_lip_height * 0.30),
             ),
             _cylinder(
-                "Top aluminium cap",
-                max(0.20, body_radius - 0.38),
-                0.10,
-                body_height - 0.09,
-                "METAL",
+                "Recessed top aluminium cap",
+                top_cap_radius,
+                top_cap_height,
+                top_cap_center_z,
+                "ALUMINIUM",
+                edge_radius=min(0.015, top_cap_height * 0.20),
             ),
-            _box(
-                "Stamped vent horizontal groove",
-                (vent_length, 0.18, 0.045),
-                (0.0, 0.0, body_height - 0.023),
-                "VENT",
-            ),
-            _box(
-                "Stamped vent vertical groove",
-                (0.18, vent_length, 0.045),
-                (0.0, 0.0, body_height - 0.022),
-                "VENT",
-            ),
+            *vent_rays,
             _cylinder(
                 "Positive lead",
                 lead_radius,
@@ -584,6 +770,7 @@ def build_vrml(spec: CapacitorSpec) -> str:
                 lead_center_z,
                 "LEAD",
                 -pitch_half,
+                edge_radius=min(0.04, lead_radius * 0.25),
             ),
             _cylinder(
                 "Negative lead",
@@ -592,7 +779,10 @@ def build_vrml(spec: CapacitorSpec) -> str:
                 lead_center_z,
                 "LEAD",
                 pitch_half,
+                edge_radius=min(0.04, lead_radius * 0.25),
             ),
+            "  ]",
+            "}",
             "",
         ]
     )
