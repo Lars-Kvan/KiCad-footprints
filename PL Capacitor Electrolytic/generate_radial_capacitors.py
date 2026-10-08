@@ -659,9 +659,17 @@ def build_footprint(spec: CapacitorSpec) -> str:
     pad_x = float(spec.pitch_mm / 2)
     ref_y = -radius - 1.25
     value_y = radius + 1.25
-    plus_x = -radius * 0.60
-    plus_y = -radius * 0.60
-    plus_half = min(0.35, radius * 0.12)
+    courtyard_radius = radius + 0.50
+    # Keep the silk polarity mark wholly outside the circular courtyard.  This
+    # avoids body, hatch, and pad collisions while retaining a readable mark
+    # that scales with the capacitor diameter.
+    silk_plus_half = min(1.50, max(0.30, radius * 0.09))
+    silk_plus_x = -(courtyard_radius + silk_plus_half + 0.20)
+    silk_plus_y = 0.0
+    silk_plus_stroke = min(0.25, max(0.12, silk_plus_half * 0.35))
+    fab_plus_x = -radius * 0.60
+    fab_plus_y = -radius * 0.60
+    fab_plus_half = min(0.35, radius * 0.12)
     package_description = (
         "2-pin snap-in" if spec.package_style == "snap_in" else "radial leaded"
     )
@@ -692,17 +700,17 @@ def build_footprint(spec: CapacitorSpec) -> str:
         *_line(
             name,
             "silk-plus-horizontal",
-            (plus_x - plus_half, plus_y),
-            (plus_x + plus_half, plus_y),
-            0.15,
+            (silk_plus_x - silk_plus_half, silk_plus_y),
+            (silk_plus_x + silk_plus_half, silk_plus_y),
+            silk_plus_stroke,
             "F.SilkS",
         ),
         *_line(
             name,
             "silk-plus-vertical",
-            (plus_x, plus_y - plus_half),
-            (plus_x, plus_y + plus_half),
-            0.15,
+            (silk_plus_x, silk_plus_y - silk_plus_half),
+            (silk_plus_x, silk_plus_y + silk_plus_half),
+            silk_plus_stroke,
             "F.SilkS",
         ),
         *_circle(name, "silk-body", radius + 0.12, 0.15, "F.SilkS"),
@@ -718,21 +726,21 @@ def build_footprint(spec: CapacitorSpec) -> str:
 
     lines.extend(
         [
-            *_circle(name, "courtyard", radius + 0.50, 0.05, "F.CrtYd"),
+            *_circle(name, "courtyard", courtyard_radius, 0.05, "F.CrtYd"),
             *_circle(name, "fab-body", radius, 0.10, "F.Fab"),
             *_line(
                 name,
                 "fab-plus-horizontal",
-                (plus_x - plus_half, plus_y),
-                (plus_x + plus_half, plus_y),
+                (fab_plus_x - fab_plus_half, fab_plus_y),
+                (fab_plus_x + fab_plus_half, fab_plus_y),
                 0.10,
                 "F.Fab",
             ),
             *_line(
                 name,
                 "fab-plus-vertical",
-                (plus_x, plus_y - plus_half),
-                (plus_x, plus_y + plus_half),
+                (fab_plus_x, fab_plus_y - fab_plus_half),
+                (fab_plus_x, fab_plus_y + fab_plus_half),
                 0.10,
                 "F.Fab",
             ),

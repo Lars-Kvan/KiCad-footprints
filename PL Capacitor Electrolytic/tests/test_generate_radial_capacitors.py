@@ -108,6 +108,18 @@ class RadialCapacitorGeneratorTests(unittest.TestCase):
             4.001,
         )
 
+    def test_silk_plus_is_outside_courtyard_and_scales_with_body(self) -> None:
+        small = generator.CapacitorSpec.from_values(4, 8.5, 1.5, 0.7, 1.3)
+        large = generator.CapacitorSpec.from_values(
+            40, 62, 10, 2, 4, package_style="snap_in"
+        )
+        small_footprint = generator.build_footprint(small)
+        large_footprint = generator.build_footprint(large)
+        self.assertIn('(start -3.3 0.0)', small_footprint)
+        self.assertIn('(end -2.7 0.0)', small_footprint)
+        self.assertIn('(start -23.7 0.0)', large_footprint)
+        self.assertIn('(end -20.7 0.0)', large_footprint)
+
     def test_sample_csv_generates_the_selected_test_footprint(self) -> None:
         sample_csv = Path(__file__).parents[1] / "radial_capacitor_specs.csv"
         specifications = generator.read_csv_specs(sample_csv)

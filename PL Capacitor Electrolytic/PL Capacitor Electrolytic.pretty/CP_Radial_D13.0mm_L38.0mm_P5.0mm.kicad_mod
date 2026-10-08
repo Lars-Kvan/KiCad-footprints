@@ -54,20 +54,20 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start -4.25 -3.9)
-		(end -3.55 -3.9)
+		(start -8.37 0.0)
+		(end -7.2 0.0)
 		(stroke
-			(width 0.15)
+			(width 0.2048)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "c506892e-9f7f-5538-a9ad-a4184aed667a")
 	)
 	(fp_line
-		(start -3.9 -4.25)
-		(end -3.9 -3.55)
+		(start -7.785 -0.585)
+		(end -7.785 0.585)
 		(stroke
-			(width 0.15)
+			(width 0.2048)
 			(type solid)
 		)
 		(layer "F.SilkS")
