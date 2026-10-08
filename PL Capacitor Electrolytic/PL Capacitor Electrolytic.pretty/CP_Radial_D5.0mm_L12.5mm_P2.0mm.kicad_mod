@@ -1,0 +1,329 @@
+(footprint "CP_Radial_D5.0mm_L12.5mm_P2.0mm"
+	(version 20241229)
+	(generator "radial_capacitor_generator")
+	(generator_version "1.1")
+	(layer "F.Cu")
+	(descr "CP, radial leaded electrolytic capacitor, pin pitch=2.0mm, diameter=5.0mm, height=12.5mm")
+	(tags "CP Radial Electrolytic radial leaded pitch 2.0mm diameter 5.0mm height 12.5mm")
+	(property "Reference" "REF**"
+		(at 0.0 -3.75 0)
+		(layer "F.SilkS")
+		(uuid "8da1a1e0-4710-5c6f-8cda-7b325c2d2445")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CP_Radial_D5.0mm_L12.5mm_P2.0mm"
+		(at 0.0 3.75 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5992b989-aed3-53f1-b76d-e14cb4096247")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0.0 0.0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e0f8fa71-723e-51a0-b910-89e3ecf7a205")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "CP, radial leaded electrolytic capacitor, pin pitch=2.0mm, diameter=5.0mm, height=12.5mm"
+		(at 0.0 0.0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "052c77d2-4fac-535a-8054-6cbfc47e908f")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.8 -1.5)
+		(end -1.2 -1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "474bebbb-4377-5824-b165-4aa0bb46555c")
+	)
+	(fp_line
+		(start -1.5 -1.8)
+		(end -1.5 -1.2)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a9d2f0f-061f-5d4c-9fee-8f29bdb9f501")
+	)
+	(fp_circle
+		(center 0.0 0.0)
+		(end 2.62 0.0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "fedcd46b-25a2-5f84-a886-7cac07ad3948")
+	)
+	(fp_line
+		(start 0.0 -2.62)
+		(end 0.0 2.62)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ca265e7b-5bf1-5bf7-bd53-e567b78cbc50")
+	)
+	(fp_line
+		(start 0.0 -2.07)
+		(end 0.5015 -2.5715)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "280eb05e-69d7-5086-947b-e061c54b277a")
+	)
+	(fp_line
+		(start 0.0 -1.52)
+		(end 0.9296 -2.4496)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1299110c-b617-562e-83f2-9e1846d613e2")
+	)
+	(fp_line
+		(start 0.0 -0.97)
+		(end 1.303 -2.273)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ed4cd90a-4dd0-53ce-9d8d-fcda6a499dad")
+	)
+	(fp_line
+		(start 0.0 -0.42)
+		(end 1.6307 -2.0507)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6759dd5f-bfbb-59a5-bbe6-a1416ccf4f72")
+	)
+	(fp_line
+		(start 1.1225 -0.9925)
+		(end 1.9165 -1.7865)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2272f1ad-c81c-5e37-93c0-c1f53a083db1")
+	)
+	(fp_line
+		(start 0.0 0.68)
+		(end 0.1512 0.5288)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d5e41b9f-dad1-556c-9284-3dffa22b6509")
+	)
+	(fp_line
+		(start 1.5288 -0.8488)
+		(end 2.1612 -1.4812)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "31e21e28-8d0d-5301-aedf-7b40f1fb8274")
+	)
+	(fp_line
+		(start 0.0 1.23)
+		(end 0.4173 0.8127)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7707806f-ae79-5d46-913d-962466f8605d")
+	)
+	(fp_line
+		(start 1.8127 -0.5827)
+		(end 2.3626 -1.1326)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9c7a61db-2781-585b-9f1e-7dae6f3da3b4")
+	)
+	(fp_line
+		(start 0.0 1.78)
+		(end 0.8002 0.9798)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "105ee9a8-e145-5c62-893a-c587f6ebb2b5")
+	)
+	(fp_line
+		(start 1.9798 -0.1998)
+		(end 2.5148 -0.7348)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8d8dece5-c096-5ee5-b057-4d36e8025675")
+	)
+	(fp_line
+		(start 0.0 2.33)
+		(end 1.4246 0.9054)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec08745c-07af-56ad-8369-3b036d4be2e6")
+	)
+	(fp_line
+		(start 1.9054 0.4246)
+		(end 2.6055 -0.2755)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "da653258-81e6-5ddd-b9d9-fd6caf6ab322")
+	)
+	(fp_line
+		(start 0.2744 2.6056)
+		(end 2.6056 0.2744)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c3aec5b8-1d1e-5d56-826c-054db2eb5b57")
+	)
+	(fp_line
+		(start 1.0143 2.4157)
+		(end 2.4157 1.0143)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "854b4ad3-cd3a-55e6-abf1-8d0fdf7b87f5")
+	)
+	(fp_circle
+		(center 0.0 0.0)
+		(end 3.0 0.0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "58696744-074e-51a6-ae64-2de58c34892e")
+	)
+	(fp_circle
+		(center 0.0 0.0)
+		(end 2.5 0.0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "58e88b54-c9aa-54ea-922e-f7eb90899e0a")
+	)
+	(fp_line
+		(start -1.8 -1.5)
+		(end -1.2 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e904f6e6-cd6a-544a-90c4-1c94a5bda036")
+	)
+	(fp_line
+		(start -1.5 -1.8)
+		(end -1.5 -1.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cb813b85-d7c3-559e-b7da-43b98e92937f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.0 0.0 0)
+		(layer "F.Fab")
+		(uuid "f1f60ac4-e14d-5b1f-aa5d-a359cbd014df")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at -1.0 0.0)
+		(size 1.5 1.5)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.125)
+		(uuid "d075f3fb-d2a0-581c-af48-edda33d21f12")
+	)
+	(pad "2" thru_hole circle
+		(at 1.0 0.0)
+		(size 1.5 1.5)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7369787b-a472-57de-b8ba-6e62a9f3fc6f")
+	)
+	(embedded_fonts no)
+	(model "${PL_FOOTPRINT_DIR}/PL Capacitor Electrolytic/3D Model/CP_Radial_D5.0mm_L12.5mm_P2.0mm.wrl"
+		(offset
+			(xyz 0.0 0.0 0.0)
+		)
+		(scale
+			(xyz 1.0 1.0 1.0)
+		)
+		(rotate
+			(xyz 0.0 0.0 0.0)
+		)
+	)
+)
