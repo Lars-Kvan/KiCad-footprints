@@ -1,0 +1,244 @@
+(footprint "SW_MEC_5GTH9"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "MEC 5G single pole normally-open tactile switch https://cdn.sos.sk/productdata/80/f6/aabf7be6/5gth9358222.pdf")
+	(tags "switch normally-open pushbutton push-button")
+	(property "Reference" "REF**"
+		(at -3.285 -6.88 180)
+		(layer "F.SilkS")
+		(uuid "fd02868c-b861-489e-bd4e-482f81aec9fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_MEC_5GTH9"
+		(at 3.8 13 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "60ed2850-6305-4998-8d12-e5355f6e08d7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cdef51f9-52f5-4f58-8674-c5d08954c827")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc288a79-f49c-4429-b482-c6f46701912d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.11 -5.93)
+		(end -5.11 5.08)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0266f732-cf56-4453-ba40-9e4afb6c524e")
+	)
+	(fp_line
+		(start -2.6 5.21)
+		(end 2.7 5.21)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "097f83a7-4bb9-4711-aa61-127524126e36")
+	)
+	(fp_line
+		(start 2.7 -5.11)
+		(end 0.05 -5.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "51fe3d23-75cc-433c-9e72-28329d2a7d68")
+	)
+	(fp_line
+		(start 5.21 -4.99)
+		(end 5.21 5.09)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "98037da0-4b1a-4056-9e0f-48efb3b94007")
+	)
+	(fp_line
+		(start -5.25 -6.18)
+		(end 5.35 -6.18)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3477cbf1-1fe3-417d-9ebb-6d216b749463")
+	)
+	(fp_line
+		(start -5.25 6.27)
+		(end -5.25 -6.18)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "26442bc6-45a4-438f-b37e-f4617aca5ead")
+	)
+	(fp_line
+		(start 5.35 -6.18)
+		(end 5.35 6.28)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9eb473a7-cbc3-43b8-9aac-c9b9a0e5edd0")
+	)
+	(fp_line
+		(start 5.35 6.28)
+		(end -5.25 6.28)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "22dd8de1-faad-474c-ab2b-90c7b1dd5e87")
+	)
+	(fp_line
+		(start -5 5.1)
+		(end -5 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "277ce912-b7b1-4a17-b949-6d0e8c2acc49")
+	)
+	(fp_line
+		(start -4 -5)
+		(end -5 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4d978592-d9c7-45f1-a4aa-5d9ae74a1f48")
+	)
+	(fp_line
+		(start -4 -5)
+		(end 5.1 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a49f4ede-2768-4281-befc-23f5ae97b3dc")
+	)
+	(fp_line
+		(start 5.1 -5)
+		(end 5.1 5.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2c472412-8cbd-4f74-821e-fc4f8daa7706")
+	)
+	(fp_line
+		(start 5.1 5.1)
+		(end -5.000004 5.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "847a6405-fc3a-475f-b7aa-abde9905824e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "a8d37aa3-508e-4fe9-9aa1-157688c36d21")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -3.76 -5.03 90)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dd0c1307-6c34-40de-bc6f-58ec5f7e1b41")
+	)
+	(pad "1" thru_hole circle
+		(at -3.76 5.13 90)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "028d0a3f-b41f-47db-95d2-d17ee35c2b2c")
+	)
+	(pad "2" thru_hole circle
+		(at 3.86 -5.03 90)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "11d1fd91-9af3-4a3b-82aa-2dc81be8c3ce")
+	)
+	(pad "2" thru_hole circle
+		(at 3.86 5.13 90)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b15d20ad-0165-4e23-925f-5f6e941aec41")
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Electromechanical Button/3D Model/5GTH9XX_20LED.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)
