@@ -1,0 +1,403 @@
+(footprint "DT035CTFT-IPS-SHB"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "DS?"
+		(at 0 -44.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9e33e4bc-50a5-4070-b579-05c0903c7bba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DT035CTFT-IPS-SHB"
+		(at 0 44.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2e57d598-a57f-4545-aa61-8280e64e9d20")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.seacomp.com/resources/datasheets/dt035ctft-ips-shb-v1.1.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68d7a9b9-a6a6-41b8-87c7-975547dfa1b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Displaytech 3.5in 320x480 IPS TFT LCD Module, RGB/SPI, 1000 cd/m2, 54.40x86.24x3.50mm, 39-pin 0.3mm FPC"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "89458df9-337c-4f53-9f3e-b4e7eae50173")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "DT035CTFT-IPS-SHB"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf45ba1a-09ec-438e-a962-269c2d45921e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files)
+	(fp_line
+		(start -27.3500 -43.2700)
+		(end -22.3500 -43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a45bf19d-952b-4c85-acc1-5437f8086cc8")
+	)
+	(fp_line
+		(start -27.3500 -43.2700)
+		(end -27.3500 -38.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "964fe1bc-18a2-4154-ae16-ee3339d77235")
+	)
+	(fp_line
+		(start 27.3500 -43.2700)
+		(end 22.3500 -43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "02d3589b-ec00-4c9b-9cac-e59ca1f0a9e8")
+	)
+	(fp_line
+		(start 27.3500 -43.2700)
+		(end 27.3500 -38.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff02fe84-970d-4fd1-a13f-addc736d8aaa")
+	)
+	(fp_line
+		(start -27.3500 43.2700)
+		(end -22.3500 43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "098df160-2227-4f45-b986-5d1a683e3853")
+	)
+	(fp_line
+		(start -27.3500 43.2700)
+		(end -27.3500 38.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f8224b55-7859-4ecc-b576-973c2c67597f")
+	)
+	(fp_line
+		(start 27.3500 43.2700)
+		(end 22.3500 43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "57c51196-895f-4162-8fe1-31daee09424b")
+	)
+	(fp_line
+		(start 27.3500 43.2700)
+		(end 27.3500 38.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "230cc539-44a3-4c19-affb-f39ed9a80568")
+	)
+	(fp_line
+		(start -27.3500 -43.2700)
+		(end 27.3500 -43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e033032-a096-4af5-acd7-0a5e4fa805fd")
+	)
+	(fp_line
+		(start -27.3500 -43.2700)
+		(end -27.3500 43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ecdb621b-7456-4454-8201-9c188d21c29f")
+	)
+	(fp_line
+		(start 27.3500 -43.2700)
+		(end 27.3500 43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "46aeb1e4-5ad8-48cd-bac9-4e3a23a6e1f6")
+	)
+	(fp_line
+		(start -27.3500 43.2700)
+		(end -20.7000 43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "35325291-4ce1-4315-a1d0-f977550f3350")
+	)
+	(fp_line
+		(start 20.7000 43.2700)
+		(end 27.3500 43.2700)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "64b1d097-dc38-46a2-8aa9-dbab4c3b459d")
+	)
+	(fp_rect
+		(start -27.4500 -43.3700)
+		(end 27.4500 43.3700)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "36c42c7e-a7c2-446b-af48-fd39ae7d78e5")
+	)
+	(fp_rect
+		(start -27.2000 -43.1200)
+		(end 27.2000 43.1200)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "126e7047-d6fb-4534-8ba7-31fd3b05877c")
+	)
+	(fp_rect
+		(start -25.9800 -38.6200)
+		(end 25.9800 41.6000)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c07d891e-c7d3-4fc6-af28-97227ad5884c")
+	)
+	(fp_rect
+		(start -25.9800 -38.6200)
+		(end 25.9800 38.3200)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1bca1528-9117-4c2c-b20e-3c9aa05325c3")
+	)
+	(fp_rect
+		(start -24.4800 -37.1200)
+		(end 24.4800 36.3200)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7e50abe1-03ff-4671-86a8-de8262c8f87f")
+	)
+	(fp_line
+		(start -24.4800 -35.6200)
+		(end -22.9800 -37.1200)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8f6d9627-748e-421f-bf09-32c177cadab9")
+	)
+	(fp_text user "(0,0)"
+		(at -21.5000 -35.8000 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "265c9f01-a304-4c48-bcc5-5e7921e1c761")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_rect
+		(start -9.5000 39.1000)
+		(end 9.5000 40.8000)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7e5c961a-f4ec-4fdb-aa5f-fe5b32b6fc8f")
+	)
+	(fp_poly
+		(pts
+			(xy -20.5000 40.5000) (xy -20.5000 52.1200) (xy -12.6700 52.1200) (xy -11.3600 54.1200) (xy -11.3600 78.2200) (xy 0.6400 78.2200) (xy 0.6400 54.1200) (xy 2.6400 52.1200) (xy 20.5000 52.1200) (xy 20.5000 40.5000)
+		)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "39ca392c-6cd9-4caa-8e92-0c527c5977e0")
+	)
+	(fp_line
+		(start -11.3600 74.2200)
+		(end 0.6400 74.2200)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(layer "Dwgs.User")
+		(uuid "24c3e096-09f6-4208-b800-0c11d2788009")
+	)
+	(fp_text user "39"
+		(at -10.5000 76.8000 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "46ff829a-781d-4ac8-8b13-caec37b905a5")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "1"
+		(at -0.2000 76.8000 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "b7a7f270-0d57-4e09-a3e0-076cf8fe3780")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "FPC Unbent (35.10mm)"
+		(at -5.3600 65.0000 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "6c02bb1f-8bb5-456d-820c-2f6a92f9672b")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.14)
+			)
+		)
+	)
+	(fp_line
+		(start -2.0000 -0.4000)
+		(end 2.0000 -0.4000)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "b4a41983-e230-4724-beb6-d41213ed6ba0")
+	)
+	(fp_line
+		(start 0.0000 -2.4000)
+		(end 0.0000 1.6000)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "f9151472-5cd4-4d3c-8392-939b93f2ea48")
+	)
+	(fp_text user "A.A. 48.96x73.44mm (320x480)"
+		(at 0.0000 -5.0000 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "6a18f088-ebd1-4db5-b391-74f20faa44ad")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.0000 5.0000 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ca15dab7-5639-4bf1-b874-881c08bab77d")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.22)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${PL}/footprints/PL Display/3D Model/DT035CTFT-IPS-SHB.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
